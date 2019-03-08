@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginRight="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealCardViewColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/help_item_padding"
+        android:paddingLeft="@dimen/help_item_padding"
+        android:paddingStart="@dimen/help_item_padding"
+        android:paddingRight="@dimen/help_item_padding"
+        android:paddingEnd="@dimen/help_item_padding">
+
+        <RelativeLayout
+            android:id="@+id/headerFl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/help_item_header_bottom_margin">
+
+            <TextView
+                android:id="@+id/questionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/arrowIv"
+                android:layout_toStartOf="@id/arrowIv"
+                android:layout_marginRight="@dimen/help_item_question_tv_margin_right"
+                android:layout_marginEnd="@dimen/help_item_question_tv_margin_right"
+                android:textSize="@dimen/help_item_question_tv_size"
+                android:textStyle="bold"
+                tools:text="Do you believe the Governments hide?"
+                tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+            <ImageView
+                android:id="@+id/arrowIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_menu_down"/>
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/answerEl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerFl"
+            app:el_expanded="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/help_item_expandable_layout_bottom_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/answerTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|top"
+                    android:textSize="@dimen/help_item_expandable_layout_answer_tv_text_size"
+                    tools:text="Maddie Rooney stopped Meghan Agosta on her second try of Thursday's shootout to clinch it. Rooney stopped 29 shots in regulation and the 20-minute overtime. Shannon Szabados made 39 saves for Canada, which had won four straight Olympic gold medals."
+                    tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/actionTvBtn"
+                    android:layout_width="@dimen/help_item_expandable_layout_action_btn_width"
+                    android:layout_height="@dimen/help_item_expandable_layout_action_btn_height"
+                    android:layout_marginTop="@dimen/help_item_expandable_layout_action_btn_margin_top"
+                    android:layout_marginBottom="@dimen/help_item_expandable_layout_action_btn_margin_bottom"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    style="@style/SecondaryButton"
+                    tools:text="Follow us"
+                    tools:textColor="@color/colorBlueAccent"
+                    tools:visibility="visible"/>
+
+            </LinearLayout>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

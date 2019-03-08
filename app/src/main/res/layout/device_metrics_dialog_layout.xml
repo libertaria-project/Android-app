@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/deviceNameSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Device name:"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="XT1562 (Moto X Play)"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/densitySmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Density:"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="2.0"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/densityInDpSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Density (DP):"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="320"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/screenSizeSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen size:"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="large"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/screenWidthInPxSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen width (PX):"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="720"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/screenWidthInDpSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen width (DP):"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="360.0"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/screenHeightInPxSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen height (PX):"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="1184"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/screenHeightInDpSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Screen height (DP):"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="592.0"/>
+
+    <com.stocksexchange.android.ui.views.SimpleMapView
+        android:id="@+id/smallestWidthInDpSmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:title="Smallest width (DP):"
+        app:titleColor="@color/deepTealPrimaryTextColor"
+        app:titleSize="16sp"
+        app:valueColor="@color/colorBlueAccent"
+        app:valueSize="16sp"
+        tools:value="360"/>
+
+</LinearLayout>

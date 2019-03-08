@@ -1,3 +1,540 @@
 <resources>
-    <string name="app_name">Stocks Exchange</string>
+
+    <!-- General -->
+    <string name="app_name" translatable="false">STEX</string>
+    <string name="app_motto">Invest in any business worldwide with STEX</string>
+
+    <string name="wallets">Wallets</string>
+    <string name="orders">Orders</string>
+    <string name="deposits">Deposits</string>
+    <string name="withdrawals">Withdrawals</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Help</string>
+    <string name="share_the_app">Share the app</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="terms_of_use">Terms of Use</string>
+
+    <string name="action_share_via">Share via…</string>
+    <string name="action_copy_link">Copy link</string>
+    <string name="action_buy">Buy</string>
+    <string name="action_sell">Sell</string>
+    <string name="action_ask">Ask</string>
+    <string name="action_bid">Bid</string>
+    <string name="action_deposit">Deposit</string>
+    <string name="action_withdraw">Withdraw</string>
+    <string name="action_spent">Spent</string>
+    <string name="action_received">Received</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_show_empty_wallets">Show Empty Wallets</string>
+    <string name="action_hide_empty_wallets">Hide Empty Wallets</string>
+    <string name="action_use_pin">Use Pin</string>
+    <string name="action_sign_out">Sign Out</string>
+
+    <string name="trade">Trade</string>
+    <string name="trade_type_buy">BUY</string>
+    <string name="trade_type_sell">SELL</string>
+
+    <string name="state_active">Active</string>
+    <string name="state_disabled">Disabled</string>
+
+    <string name="transaction_status_finished">FINISHED</string>
+    <string name="transaction_status_awaiting_confirmations">AWAITING CONFIRMATIONS</string>
+    <string name="transaction_status_email_sent">EMAIL SENT</string>
+    <string name="transaction_status_cancelled_by_user">CANCELLED BY USER</string>
+    <string name="transaction_status_awaiting_approval">AWAITING APPROVAL</string>
+    <string name="transaction_status_approved">APPROVED</string>
+    <string name="transaction_status_not_confirmed">NOT CONFIRMED</string>
+    <string name="transaction_status_processing">PROCESSING</string>
+    <string name="transaction_status_withdrawal_error">WITHDRAWAL ERROR</string>
+    <string name="transaction_status_cancelled_by_admin">CANCELLED BY ADMIN</string>
+
+    <string name="last_price">Last Price</string>
+    <string name="at_price">At Price</string>
+    <string name="fee">Fee</string>
+    <string name="address">Address</string>
+    <string name="id">ID</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="amount">Amount</string>
+    <string name="price">Price</string>
+    <string name="time">Time</string>
+    <string name="income">Income</string>
+    <string name="date">Date</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="status">Status</string>
+    <string name="base_currency">Base Currency</string>
+    <string name="quote_currency">Quote Currency</string>
+    <string name="daily_min_price">24hr Min Price</string>
+    <string name="daily_max_price">24hr Max Price</string>
+    <string name="daily_change">24hr Change</string>
+    <string name="daily_volume">24hr Volume</string>
+    <string name="buy_fee_percent">Buy Fee</string>
+    <string name="sell_fee_percent">Sell Fee</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="balance_in_orders">Balance In Orders</string>
+    <string name="search_deposits">Search deposits</string>
+    <string name="search_withdrawals">Search withdrawals</string>
+    <string name="deposit_address">Deposit Address</string>
+    <string name="public_key">Public Key</string>
+    <string name="secret_key">Secret Key</string>
+    <string name="payment_id">Payment ID</string>
+    <string name="destination_tag">Destination Tag</string>
+    <string name="account">Account</string>
+    <string name="general">General</string>
+    <string name="data_streaming">Data Streaming</string>
+    <string name="stream_real_time_data">Stream real-time data</string>
+    <string name="appearance">Appearance</string>
+    <string name="animate_charts">Animate charts</string>
+    <string name="bullish_candle_stick_style">Bullish candle stick style</string>
+    <string name="bearish_candle_stick_style">Bearish candle stick style</string>
+    <string name="zoom_in_on_the_price_chart">Zoom in on the price chart</string>
+    <string name="depth_chart_line_style">Depth chart line style</string>
+    <string name="highlight_orderbook_real_time_updates">Highlight orderbook real-time updates</string>
+    <string name="highlight_new_trades_real_time_addition">Highlight real-time addition of new trades</string>
+    <string name="formatting">Formatting</string>
+    <string name="notifications">Notifications</string>
+    <string name="debug" translatable="false">Debug</string>
+    <string name="grouping">Grouping</string>
+    <string name="grouping_separator">Grouping separator</string>
+    <string name="decimal_separator">Decimal separator</string>
+    <string name="theme">Theme</string>
+    <string name="themes">Themes</string>
+    <string name="restore_defaults">Restore Defaults</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="fingerprint_unlock">Fingerprint Unlock</string>
+    <string name="force_authentication_on_app_startup">Force authentication on app startup</string>
+    <string name="authentication_session_duration">Authentication Session Duration</string>
+    <string name="sounds">Sounds</string>
+    <string name="vibration">Vibration</string>
+    <string name="phone_led">Phone LED</string>
+    <string name="notification_ringtone">Notification ringtone</string>
+    <string name="device_metrics" translatable="false">Device metrics</string>
+    <string name="device_metrics_description" translatable="false">Shows device specific metrics for debugging</string>
+    <string name="volume_template">Vol %s</string>
+    <string name="sign_out_template">Sign out of @%s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="ringtones">Ringtones</string>
+    <string name="note">Note</string>
+    <string name="app_sharing_template">I\'m using STEX for trading cryptocurrencies! Try it out for yourself: %s</string>
+    <string name="period">Period</string>
+    <string name="comma">Comma</string>
+    <string name="twitter" translatable="false">Twitter</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="telegram" translatable="false">Telegram</string>
+    <string name="solid">Solid</string>
+    <string name="hollow">Hollow</string>
+    <string name="linear">Linear</string>
+    <string name="stepped">Stepped</string>
+    <string name="price_unavailable">Unavailable</string>
+    <string name="volume_unavailable">Unavailable</string>
+
+    <!-- Time periods -->
+    <string name="time_period_fifteen_seconds" translatable="false">15 seconds (for debugging only)</string>
+    <string name="time_period_five_minutes">5 minutes</string>
+    <string name="time_period_ten_minutes">10 minutes</string>
+    <string name="time_period_fifteen_minutes">15 minutes</string>
+    <string name="time_period_thirty_minutes">30 minutes</string>
+    <string name="time_period_forty_five_minutes">45 minutes</string>
+    <string name="time_period_one_hour">1 hour</string>
+    <string name="time_period_two_hours">2 hours</string>
+    <string name="time_period_three_hours">3 hours</string>
+    <string name="time_period_six_hours">6 hours</string>
+    <string name="time_period_nine_hours">9 hours</string>
+    <string name="time_period_twelve_hours">12 hours</string>
+
+    <!-- Candle stick styles -->
+    <string name="candle_stick_style_solid" translatable="false">@string/solid</string>
+    <string name="candle_stick_style_hollow" translatable="false">@string/hollow</string>
+
+    <!-- Depth chart line styles -->
+    <string name="depth_chart_line_style_linear" translatable="false">@string/linear</string>
+    <string name="depth_chart_line_style_stepped" translatable="false">@string/stepped</string>
+
+    <!-- Decimal separators -->
+    <string name="decimal_separator_period" translatable="false">@string/period</string>
+    <string name="decimal_separator_comma" translatable="false">@string/comma</string>
+
+    <!-- Grouping separators -->
+    <string name="grouping_separator_period" translatable="false">@string/period</string>
+    <string name="grouping_separator_comma" translatable="false">@string/comma</string>
+    <string name="grouping_separator_space">Space</string>
+
+    <!-- Toasts -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="order_created">The order has been successfully created!</string>
+    <string name="order_cancelled">The order has been successfully cancelled!</string>
+    <string name="qr_code_image_downloaded">The image has been successfully saved!</string>
+    <string name="market_not_found">Could not find the specified market!</string>
+    <string name="pin_code_changed">The PIN code has been changed successfully!</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_wallets_short_label" translatable="false">@string/wallets</string>
+    <string name="shortcut_wallets_long_label" translatable="false">@string/wallets</string>
+
+    <string name="shortcut_orders_short_label" translatable="false">@string/orders</string>
+    <string name="shortcut_orders_long_label" translatable="false">@string/orders</string>
+
+    <string name="shortcut_favorite_markets_short_label">Favorite Markets</string>
+    <string name="shortcut_favorite_markets_long_label" translatable="false">@string/shortcut_favorite_markets_short_label</string>
+
+    <string name="shortcut_search_markets_short_label">Search Markets</string>
+    <string name="shortcut_search_markets_long_label" translatable="false">@string/shortcut_search_markets_short_label</string>
+
+    <!-- Error messages -->
+    <string name="error_permissions_not_granted">Permissions not granted! Unable to proceed.</string>
+    <string name="error_server_not_responding">The server is not responding! Please try again later.</string>
+    <string name="error_too_many_requests">The server denied the request! Please try again in a minute.</string>
+    <string name="error_something_went_wrong">Oops! Something went wrong.</string>
+    <string name="error_security_provider">Failed to update a security provider! Make sure you have the latest version of Google Play Services and try again.</string>
+    <string name="error_check_network_connection">Please check your network connection.</string>
+    <string name="error_malformed_qr_code">The provided QR code is malformed.</string>
+    <string name="error_user_not_found">Could not find the user with specified credentials.</string>
+    <string name="error_exchange_disabled">This exchange is currently disabled! Please try again later.</string>
+    <string name="error_min_order_amount">The amount should be at least %s</string>
+    <string name="error_balance_too_small">You don\'t have enough %s on your balance</string>
+    <string name="error_price_is_not_positive">The price should be positive</string>
+    <string name="error_no_chart_data_available">No chart data available</string>
+    <string name="error_no_active_orders_available">No active orders available</string>
+    <string name="error_no_completed_orders_available">No completed orders available</string>
+    <string name="error_no_cancelled_orders_available">No cancelled orders available</string>
+    <string name="error_no_deposits_available">No deposits available</string>
+    <string name="error_no_withdrawals_available">No withdrawals available</string>
+    <string name="error_no_data_available">No data available</string>
+    <string name="error_invalid_currency">Can\'t get currency wallet information. Please try again later.</string>
+    <string name="error_currency_disabled">The currency is disabled due to technical works. Please try again later.</string>
+    <string name="error_no_markets_available">No %s markets</string>
+    <string name="error_no_orderbook_available">No orderbook available</string>
+    <string name="error_no_trades_available">No trades available</string>
+    <string name="error_no_favorite_markets_available">No favorite markets</string>
+    <string name="error_no_wallets_available">No wallets available</string>
+    <string name="error_amount_too_small">The entered amount is too small.</string>
+    <string name="error_max_num_of_open_orders">The maximum number of open orders with the same price can not exceed 10!</string>
+    <string name="error_pins_mismatch">PINs do not match!</string>
+    <string name="error_invalid_pin">Invalid PIN! Please try again.</string>
+    <string name="error_invalid_new_pin">You cannot user your current PIN as your new PIN.</string>
+    <string name="error_fingerprint_not_recognized">Fingerprint not recognized. Try again.</string>
+    <string name="error_fingerprint_initialization_failed">Failed to initialize the fingerprint scanner. Please try again later.</string>
+    <string name="error_fingerprint_too_many_failed_attempts_template">There have been too many failed attempts. %s</string>
+    <string name="error_pin_code_too_many_attempts">You have incorrectly entered your PIN code %d times.\n\nTry again in 30 seconds.</string>
+    <string name="error_empty_public_key">The public key field should not be empty!</string>
+    <string name="error_empty_secret_key">The secret key field should not be empty!</string>
+    <string name="error_public_key_length">The public key length should be %d characters!</string>
+    <string name="error_secret_key_length">The secret key length should be %d characters!</string>
+    <string name="error_invalid_qr_code">The provided QR code contains invalid credentials.</string>
+    <string name="error_invalid_keys">The provided keys are invalid.</string>
+    <string name="error_unable_to_proceed">Unable to proceed</string>
+    <string name="error_no_email_client_template">The email client was not found! %s.</string>
+    <string name="error_no_browser_client_template">The browser client was not found! %s.</string>
+    <string name="error_no_sharing_client_template">The sharing client was not found! %s.</string>
+    <string name="error_invalid_deep_link">The provided URL is either empty or malformed!</string>
+    <string name="error_no_information_available">No information available</string>
+    <string name="error_empty_email_address">The provided email address is empty!</string>
+    <string name="error_invald_email_address">The provided email address is invalid!</string>
+    <string name="error_empty_password">The provided password is empty!</string>
+    <string name="error_empty_code">The provided code is empty!</string>
+    <string name="error_email_taken">The provided email address has already been taken!</string>
+    <string name="error_password_length">The password should be at least 6 and at most 32 characters!</string>
+    <string name="error_password_common">The provided password is way too common and is very easy to guess. Please use another one!</string>
+    <string name="error_invalid_code">The provided code is invalid. Please double-check it and try again.</string>
+    <string name="error_invalid_credentials">The email or password is invalid. Please double-check them and try again.</string>
+
+    <!-- Login -->
+    <string name="login_hint">Scan QR code provided in your account settings at our website stex.com</string>
+    <string name="login_problem">Problems signing in?</string>
+    <string name="login_invalid_credentials_dialog_title">Invalid Credentials</string>
+    <string name="login_invalid_credentials_dialog_qr_code_message">
+        It looks like the QR code you scanned is invalid. One common reason for that is a password change which
+        regenerates the keys as well as the QR code. Please make sure you\'re scanning the right QR code and try again.
+    </string>
+    <string name="login_invalid_credentials_dialog_keys_message">
+        It looks like the keys you entered manually are invalid. One common reason for that is a password change
+        which regenerates the keys as well as the QR code. Please make sure you\'re entering the right keys and try again.
+    </string>
+    <string name="login_email_edit_text_hint">Email</string>
+    <string name="login_password_edit_text_hint">Password</string>
+    <string name="login_code_edit_text_hint">Code</string>
+    <string name="login_help_button_text">Forgot your password?</string>
+    <string name="login_register_button_text">Don\'t have an account yet?</string>
+    <string name="login_main_btn_log_in_text">Log In</string>
+    <string name="login_main_btn_submit_text">Submit</string>
+
+    <string name="login_confirmation_email_hint">
+        We sent you a one-time code to your email. Please check the inbox to get the code to enter below. Be sure to check
+        the spam folder if you can\'t see our email.
+    </string>
+    <string name="login_confirmation_sms_hint">
+        We sent you a one-time code to your mobile phone. Check the incoming SMS to get the code to enter below.
+    </string>
+    <string name="login_confirmation_2fa_hint">
+        You have two-factor authentication enabled. Please enter your six-digit code provided by the authenticator you use.
+    </string>
+    <string name="login_confirmation_2fa_help_button_text">
+        I\'ve lost my device and want to disable the two-factor authentication?
+    </string>
+
+    <string name="login_2fa_help_dialog_title">Disabling 2FA</string>
+    <string name="login_2fa_help_dialog_message">
+        If you have lost your device and want to disable the two-factor authentication, please contact the support.
+    </string>
+    <string name="login_2fa_help_dialog_positive_button_text">Contact</string>
+
+    <string name="login_invalid_credentials_dialog_footer_text">Please fix all of the errors above and try again.</string>
+
+    <string name="login_invalid_parameters_dialog_title">Error</string>
+
+    <!-- Dashboard related -->
+    <string name="dashboard_toolbar_title">Markets</string>
+
+    <string name="dashboard_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="dashboard_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <!-- CurrencyMarketsSortPanel -->
+    <string name="currency_markets_sort_panel_name_title">Name</string>
+    <string name="currency_markets_sort_panel_last_price_title">Last Price</string>
+    <string name="currency_markets_sort_panel_volume_title">Vol</string>
+    <string name="currency_markets_sort_panel_daily_price_change_title">24h Chg%</string>
+
+    <!-- NavigationDrawer -->
+    <string name="navigation_drawer_header_sign_in_button_title">Sign In</string>
+
+    <!-- CurrencyMarketsFragment -->
+    <string name="currency_markets_fragment_search_initial_message">Search for specific markets</string>
+    <string name="currency_markets_fragment_search_no_markets_found_template">No markets found for\n\"%1$s\"</string>
+
+    <!-- CurrencyMarketsSearchActivity -->
+    <string name="currency_markets_search_activity_toolbar_query_input_hint">Search markets</string>
+
+    <!-- CurrencyMarketItem -->
+    <string name="currency_market_item_volume_template" translatable="false">@string/volume_template</string>
+
+    <!-- Feedback -->
+    <string name="feedback_greeting_text">Hello!</string>
+    <string name="feedback_detailed_message_text">
+        Noticed a bug or have a suggestion? \n\nPlease, let us know. Where
+        possible, we will look to use it to improve our app and the most useful
+        ones will be rewarded with the STEX coin.\n\nHelp us make this app even better!
+    </string>
+
+    <string name="feedback_footer_new_feedback_title">New Feedback</string>
+    <string name="feedback_footer_send_button_text">Send</string>
+    <string name="feedback_footer_feedback_text_et_hint">Please enter your feedback here…</string>
+
+    <!-- AboutActivity related -->
+    <string name="about_activity_app_version_template">version %s</string>
+    <string name="about_activity_header_description">
+        STEX is one of the most easy-to-use trading platforms worldwide.
+        Simplicity and comfort of our marketing platform allows you to invest in any
+        business all over the world. Just in one click buy or sell any your coins,
+        assets or tokens on major crypto platforms and do your business online.
+    </string>
+
+    <string name="about_activity_feature_crypto_caption">Trade for any crypto</string>
+    <string name="about_activity_feature_audit_caption">Strong internal audit</string>
+    <string name="about_activity_feature_storage_caption">Secure storage</string>
+
+    <string name="about_activity_website_button_text">Visit our website</string>
+
+    <!-- Custom tabs related -->
+    <string name="menu_item_share_via" translatable="false">@string/action_share_via</string>
+    <string name="menu_item_copy_link" translatable="false">@string/action_copy_link</string>
+
+    <!-- CurrencyMarketPreviewActivity -->
+    <string name="currency_market_preview_price_change_template" translatable="false">%1$s (%2$s)</string>
+    <string name="currency_market_preview_chart_types_sov_left_option_title_text">Price chart</string>
+    <string name="currency_market_preview_chart_types_sov_right_option_title_text">Depth chart</string>
+    <string name="currency_market_preview_market_info_text">Market Info</string>
+    <string name="currency_market_preview_trade_info_sov_left_option_title_text">Orderbook</string>
+    <string name="currency_market_preview_trade_info_sov_right_option_title_text">Trades</string>
+
+    <!-- TradeActivity -->
+    <string name="trade_activity_amount_edit_text_hint">Minimum: %s</string>
+    <string name="trade_activity_fee_title_text">Fee:</string>
+    <string name="trade_activity_user_deduction_title_text">You Give:</string>
+    <string name="trade_activity_user_addition_title_text">You Get:</string>
+    <string name="trade_activity_buy_button_template">Buy %1$s For %2$s</string>
+    <string name="trade_activity_sell_button_template">Sell %1$s For %2$s</string>
+
+    <!-- Chart related -->
+    <string name="chart_candle_stick_info_open" translatable="false">O:</string>
+    <string name="chart_candle_stick_info_high" translatable="false">H:</string>
+    <string name="chart_candle_stick_info_low" translatable="false">L:</string>
+    <string name="chart_candle_stick_info_close" translatable="false">C:</string>
+    <string name="chart_candle_stick_info_volume" translatable="false">V:</string>
+    <string name="chart_candle_stick_info_time" translatable="false">T:</string>
+    <string name="chart_interval_one_day">1D</string>
+    <string name="chart_interval_one_week">1W</string>
+    <string name="chart_interval_one_month">1M</string>
+    <string name="chart_interval_three_months">3M</string>
+
+    <!-- Depth chart related -->
+    <string name="depth_chart_info_price">Price:</string>
+    <string name="depth_chart_info_amount">Amount:</string>
+    <string name="depth_chart_info_volume">Volume:</string>
+    <string name="depth_chart_info_highest_bid">Highest Bid:</string>
+    <string name="depth_chart_info_lowest_ask">Lowest Ask:</string>
+    <string name="depth_chart_info_spread">Spread:</string>
+
+    <string name="depth_chart_all_tab_title">ALL</string>
+
+    <!-- WalletsSearchActivity -->
+    <string name="wallets_search_activity_input_hint_text">Search wallets</string>
+
+    <!-- WalletsFragment -->
+    <string name="wallets_fragment_search_initial_message">Search for specific wallets</string>
+    <string name="wallets_fragment_search_no_wallets_found_template">No wallets found for\n\"%1$s\"</string>
+
+    <string name="wallets_fragment_disabled_fiat_wallets_dialog_message">
+        Unfortunately, depositing functionality for fiat wallets is currently only enabled on our website and has not been
+        yet fully implemented for mobile-based devices. We apologize for the temporary inconvenience.
+    </string>
+
+    <!-- OrdersActivity -->
+    <string name="orders_activity_tab_active_orders_title">ACTIVE</string>
+    <string name="orders_activity_tab_completed_orders_title">COMPLETED</string>
+    <string name="orders_activity_tab_cancelled_orders_title">CANCELLED</string>
+
+    <!-- TransactionsFragment -->
+    <string name="transactions_fragment_search_deposits_initial_message">Search for specific deposits</string>
+    <string name="transactions_fragment_search_withdrawals_initial_message">Search for specific withdrawals</string>
+    <string name="transactions_fragment_search_no_deposits_found_template">No deposits found for\n\"%1$s\"</string>
+    <string name="transactions_fragment_search_no_withdrawals_found_template">No withdrawals found for\n\"%1$s\"</string>
+
+    <!-- DepositFragment -->
+    <string name="deposit_fragment_deposit_fee_template">Deposit Fee: %s</string>
+    <string name="deposit_fragment_min_amount_template">Min Order Amount: %s</string>
+    <string name="deposit_fragment_warning_template">Warning!\n\nSend only %s to this address. Sending any other currency to this address may result in the loss of your deposit.</string>
+    <string name="deposit_fragment_hint_text">Hint: click to copy or long click to show QR code</string>
+
+    <!-- QrDialog -->
+    <string name="qr_dialog_title_deposit_address_template">%s Deposit Address</string>
+    <string name="qr_dialog_title_public_key_template">%s Public Key</string>
+    <string name="qr_dialog_title_payment_id_template">%s Payment ID</string>
+    <string name="qr_dialog_title_destination_tag_template">%s Destination Tag</string>
+    <string name="qr_dialog_copy_hash_btn_text">Copy</string>
+    <string name="qr_dialog_save_image_btn_text">Save Image</string>
+
+    <!-- HelpActivity -->
+    <string name="help_item_price_chart_data_intervals_question_text" translatable="false">What do %1$s, %2$s, %3$s, and %4$s mean under the price chart?</string>
+    <string name="help_item_price_chart_data_intervals_answer_text" translatable="false">They are abbreviations for a one day, one week, one month, and three months, respectively.</string>
+    <string name="help_item_depth_chart_tab_titles_question_text" translatable="false">What do numbers under the depth chart mean?</string>
+    <string name="help_item_depth_chart_tab_titles_answer_text" translatable="false">
+        They denote the depth of the chart. For example, if the number 15 is selected, this means that the bid and the ask parts each contain 15
+        orderbook orders. The same calculation applies for a different number. If the option \"%s\" is selected, then all orderbook orders are
+        displayed on the depth chart.
+    </string>
+    <string name="help_item_no_withdrawals_question_text" translatable="false">Why does the app not support withdrawals?</string>
+    <string name="help_item_no_withdrawals_answer_text" translatable="false">
+        Due to security concerns, withdrawals are disabled on mobile phones at the moment and only available on our website.
+    </string>
+    <string name="help_item_currency_disabled_question_text" translatable="false">What are the reasons for a currency to be disabled?</string>
+    <string name="help_item_currency_disabled_answer_text" translatable="false">
+        The currency can be disabled either due to the technical works (update, upgrade, SWAP, etc.) or currency delisting.
+        To get notified when a currency is disabled, please follow one of our social media by clicking the button below.
+    </string>
+    <string name="help_item_currency_disabled_button_text" translatable="false">Follow us</string>
+    <string name="help_item_assets_dividends_question_text" translatable="false">How do I receive dividends on assets?</string>
+    <string name="help_item_assets_dividends_answer_text" translatable="false">
+        All assets traded on our platform will automatically receive dividends spread through the NXT dividend payment option or via
+        direct deposit to a hot wallet. You don\'t need to do anything specific, simply trade and get dividends!
+    </string>
+    <string name="help_item_no_answer_question_text" translatable="false">Didn\'t find the answer to your question?</string>
+    <string name="help_item_no_answer_answer_text" translatable="false">
+        In such case, the best option for you would be to contact us directly and explain your issue in as much
+        detail as possible; you can also include the relevant screenshots and/or screen recordings.
+    </string>
+    <string name="help_item_no_answer_button_text" translatable="false">Contact us</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_activity_sign_out_dialog_title_text" translatable="false">@string/action_sign_out</string>
+    <string name="settings_activity_sign_out_dialog_text">Are you sure you want to sign out?</string>
+    <string name="settings_activity_restore_defaults_dialog_title_text">Restore Default Settings</string>
+    <string name="settings_activity_restore_defaults_dialog_text">Are you sure you want to restore to default settings?</string>
+    <string name="settings_activity_no_fingerprints_available_dialog_title_text">No Fingerprints Registered</string>
+    <string name="settings_activity_no_fingerprints_available_dialog_text">
+        No fingerprints have been registered to this device yet. Do you want to register a fingerprint now?
+    </string>
+    <string name="settings_activity_disable_fingerprint_unlock_dialog_title_text">Fingerprint</string>
+    <string name="settings_activity_disable_fingerprint_unlock_dialog_text">
+        Are you sure you want to disable fingerprint authentication?
+    </string>
+    <string name="settings_activity_restore_defaults_description">Restores the default application settings</string>
+    <string name="settings_activity_stream_real_time_data_description">Downloads new data as soon as it is available</string>
+    <string name="settings_activity_animate_charts_description">Allows you to enable or disable the animation of price and depth charts</string>
+    <string name="settings_activity_zoom_in_on_the_price_chart_description">Zooms in on the latest candle sticks of the price chart instead of displaying them all at once</string>
+    <string name="settings_activity_highlight_orderbook_real_time_updates_description">Emphasizes real-time updates of an orderbook by highlighting the changed data</string>
+    <string name="settings_activity_highlight_new_trades_real_time_addition_description">Emphasizes real-time addition of new trades by highlighting them</string>
+    <string name="settings_activity_change_pin_description">Allows you to replace your current PIN code with a new one</string>
+    <string name="settings_activity_fingerprint_unlock_description">Allows you to authenticate using your fingerprint</string>
+    <string name="settings_activity_force_authentication_description">Forces authentication to be performed when the app starts even if the session has not expired</string>
+    <string name="settings_activity_grouping_section_description">Divides numbers with many digits into groups using the grouping separator</string>
+    <string name="settings_activity_decimal_separator_automatic_change">
+        Your decimal separator was automatically updated to the %1$s since you have selected the %2$s as your new grouping separator.
+    </string>
+    <string name="settings_activity_grouping_separator_automatic_change">
+        Your grouping separator was automatically updated to the %1$s since you have selected the %2$s as your new decimal separator.
+    </string>
+    <string name="settings_activity_automatic_change_first_arg_comma">comma</string>
+    <string name="settings_activity_automatic_change_second_arg_comma">comma</string>
+    <string name="settings_activity_automatic_change_first_arg_period">period</string>
+    <string name="settings_activity_automatic_change_second_arg_period">period</string>
+
+    <!-- OrdersSearchActivity -->
+    <string name="orders_search_activity_active_orders_hint">Search active orders</string>
+    <string name="orders_search_activity_completed_orders_hint">Search completed orders</string>
+    <string name="orders_search_activity_cancelled_orders_hint">Search cancelled orders</string>
+
+    <!-- OrdersFragment -->
+    <string name="orders_fragment_search_no_orders_found_template">No orders found for\n\"%1$s\"</string>
+    <string name="orders_fragment_search_initial_message">Search for specific orders</string>
+    <string name="orders_fragment_order_cancellation_dialog_title">Order Cancellation</string>
+    <string name="orders_fragment_order_cancellation_dialog_content">Are you sure you want to cancel this order?</string>
+
+    <!-- AuthenticationActivity -->
+    <string name="authentication_activity_hint_create_pin">Create PIN</string>
+    <string name="authentication_activity_hint_confirm_pin">Confirm PIN</string>
+    <string name="authentication_activity_hint_enter_pin">Enter PIN</string>
+
+    <string name="authentication_activity_common_pin_codes_dialog_title">Warning</string>
+    <string name="authentication_activity_common_pin_codes_dialog_message">
+        The PIN you have selected is extremely common and may be easily guessed by someone with access
+        to your phone. Would you like to use this PIN anyway?
+    </string>
+    <string name="authentication_activity_common_pin_codes_dialog_negative_button_text">Try Again</string>
+    <string name="authentication_activity_common_pin_codes_dialog_positive_button_text">Continue</string>
+    <string name="authentication_activity_count_down_timer_one_template">Try again in %d second.</string>
+    <string name="authentication_activity_count_down_timer_few_template">Try again in %d seconds.</string>
+    <string name="authentication_activity_count_down_timer_many_template">Try again in %d seconds.</string>
+    <string name="authentication_activity_count_down_timer_other_template">Try again in %d seconds.</string>
+    <string name="authentication_activity_fingerprint_exhausted_message">
+        Please authenticate by entering your PIN code instead.
+    </string>
+
+    <!-- FingerprintDialog -->
+    <string name="fingerprint_dialog_title">Fingerprint Authentication</string>
+    <string name="fingerprint_dialog_introduction_message">Use your fingerprint for faster and easier authentication</string>
+    <string name="fingerprint_dialog_setup_attempts_used_up_message">Please attempt setup again later.</string>
+    <string name="fingerprint_dialog_scan_attempts_used_up_message">Please authenticate using your PIN instead.</string>
+    <string name="fingerprint_dialog_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_dialog_default_status_text">Touch the sensor</string>
+    <string name="fingerprint_dialog_success_status_text">Fingerprint recognized</string>
+
+    <!-- CredentialsInputDialog -->
+    <string name="credentials_input_dialog_title">Credentials Input</string>
+    <string name="credentials_input_dialog_subtitle">Please enter public and secret keys below</string>
+    <string name="credentials_input_dialog_public_key_et_hint_text" translatable="false">@string/public_key</string>
+    <string name="credentials_input_dialog_secret_key_et_hint_text" translatable="false">@string/secret_key</string>
+
+    <!-- OrderbookDetailsView -->
+    <string name="orderbook_details_view_highest_bid_dmv_title">Highest Bid</string>
+    <string name="orderbook_details_view_lowest_ask_dmv_title">Lowest Ask</string>
+    <string name="orderbook_details_view_buy_volume_dmv_title">Buy Volume</string>
+    <string name="orderbook_details_view_sell_volume_dmv_title">Sell Volume</string>
+
+    <!-- OrderbookActivity -->
+    <string name="orderbook_activity_toolbar_title_template">%s orderbook</string>
+
 </resources>

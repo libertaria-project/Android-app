@@ -1,6 +1,2125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <!-- General -->
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="colorDropShadow">#51000000</color>
+    <color name="colorSemiTransparent">#9f000000</color>
+
+    <color name="colorFingerprintSuccess">@color/colorGreenAccent</color>
+    <color name="colorFingerprintError">@color/colorRedAccent</color>
+
+    <color name="colorBidOrderbookOrderBackground">#2100be75</color>
+    <color name="colorAskOrderbookOrderBackground">#41cc2e4e</color>
+
+    <color name="colorBidOrderbookOrderHighlightBackground">#8000be75</color>
+    <color name="colorAskOrderbookOrderHighlightBackground">#80cc2e4e</color>
+
+    <color name="colorBidOrderbookOrderPriceHighlight">#0cffa1</color>
+    <color name="colorAskOrderbookOrderPriceHighlight">#ff3f66</color>
+
+    <color name="colorBidTradeHighlightBackground">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="colorAskTradeHighlightBackground">@color/colorAskOrderbookOrderHighlightBackground</color>
+
+    <color name="colorBidTradePriceHighlight">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="colorAskTradePriceHighlight">@color/colorAskOrderbookOrderPriceHighlight</color>
+
+    <color name="colorLoginEditTextBackground">#33FFFFFF</color>
+    <color name="colorLoginEditTextHintColor">#77FFFFFF</color>
+
+    <color name="colorRedAccent">#cc2e4e</color>
+    <color name="colorRedAccentDark">#af2441</color>
+    <color name="colorGreenAccent">#00be75</color>
+    <color name="colorGreenAccentDark">#00a35d</color>
+    <color name="colorLightGreenAccent">#8BC34A</color>
+    <color name="colorLightGreenAccentDark">#7CB342</color>
+    <color name="colorTealAccent">#009688</color>
+    <color name="colorTealAccentDark">#00897B</color>
+    <color name="colorBlueAccent">#329ED5</color>
+    <color name="colorBlueAccentDark">#2f84af</color>
+    <color name="colorYellowAccent">#ddc040</color>
+    <color name="colorYellowAccentDark">#FCBD0D</color>
+    <color name="colorOrangeAccent">#f2992c</color>
+    <color name="colorOrangeAccentDark">#e08b23</color>
+    <color name="colorPurpleAccent">#a77dc2</color>
+    <color name="colorPurpleAccentDark">#966eaf</color>
+
+
+
+
+    <!-- Deep Teal -->
+
+    <!-- General -->
+    <color name="deepTealPrimaryColor">#002e3c</color>
+    <color name="deepTealPrimaryLightColor">#063a4c</color>
+    <color name="deepTealPrimaryDarkColor">#00222d</color>
+    <color name="deepTealPrimaryTextColor">@color/white</color>
+    <color name="deepTealPrimaryDarkTextColor">#cad2d6</color>
+    <color name="deepTealSecondaryTextColor">#809aaf</color>
+    <color name="deepTealSecondaryDarkTextColor">#5d7182</color>
+    <color name="deepTealAccentColor">#009688</color>
+    <color name="deepTealDarkAccentColor">#00897B</color>
+    <color name="deepTealContentContainerColor">#001d26</color>
+    <color name="deepTealContentContainerLightColor">@color/deepTealPrimaryDarkColor</color>
+    <color name="deepTealContentContainerTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealTabIndicatorColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealInfoViewColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealProgressBarColor">@color/deepTealAccentColor</color>
+    <color name="deepTealGradientStartColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealGradientEndColor">@color/deepTealPrimaryLightColor</color>
+    <color name="deepTealLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="deepTealLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="deepTealFeedbackCardViewColor">@color/deepTealCardViewBackgroundColor</color>
+    <color name="deepTealFeedbackFooterButtonColor">@color/deepTealAccentColor</color>
+    <color name="deepTealSettingsBackgroundColor">#002733</color>
+
+    <!-- Button -->
+    <color name="deepTealButtonContentColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealButtonReleasedStateBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealButtonPressedStateBackgroundColor">#002633</color>
+
+    <!-- CardView -->
+    <color name="deepTealCardViewBackgroundColor">#002733</color>
+    <color name="deepTealCardViewPrimaryTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealCardViewPrimaryDarkTextColor">@color/deepTealSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="deepTealSwitchOptionsViewTitleTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealSwitchOptionsViewSwitchColor">@color/deepTealAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="deepTealPriceChartViewBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealPriceChartViewProgressBarColor">@color/deepTealProgressBarColor</color>
+    <color name="deepTealPriceChartViewInfoViewColor">@color/deepTealInfoViewColor</color>
+    <color name="deepTealPriceChartViewInfoFieldsDefaultTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealPriceChartViewAxisGridColor">#80888888</color>
+    <color name="deepTealPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="deepTealPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="deepTealPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="deepTealPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="deepTealPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="deepTealPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="deepTealPriceChartViewTabTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealPriceChartViewTabIndicatorColor">@color/deepTealTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="deepTealDepthChartViewBackgroundColor">@color/deepTealPriceChartViewBackgroundColor</color>
+    <color name="deepTealDepthChartViewProgressbarColor">@color/deepTealPriceChartViewProgressBarColor</color>
+    <color name="deepTealDepthChartViewInfoViewColor">@color/deepTealPriceChartViewInfoViewColor</color>
+    <color name="deepTealDepthChartViewInfoFieldsDefaultTextColor">@color/deepTealPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="deepTealDepthChartViewAxisGridColor">@color/deepTealPriceChartViewAxisGridColor</color>
+    <color name="deepTealDepthChartViewHighlighterColor">@color/deepTealPriceChartViewHighlighterColor</color>
+    <color name="deepTealDepthChartViewPositiveColor">@color/deepTealPriceChartViewPositiveColor</color>
+    <color name="deepTealDepthChartViewNegativeColor">@color/deepTealPriceChartViewNegativeColor</color>
+    <color name="deepTealDepthChartViewNeutralColor">@color/deepTealPriceChartViewNeutralColor</color>
+    <color name="deepTealDepthChartViewTabTextColor">@color/deepTealPriceChartViewTabTextColor</color>
+    <color name="deepTealDepthChartViewTabIndicatorColor">@color/deepTealPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="deepTealMarketDetailsViewBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealMarketDetailsViewItemTitleColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealMarketDetailsViewItemValueColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealMarketDetailsViewItemSeparatorColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="deepTealMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="deepTealOrderbookViewBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealOrderbookViewHeaderTitleTextColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookViewHeaderMoreButtonColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookViewHeaderSeparatorColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="deepTealOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="deepTealOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="deepTealOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="deepTealOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="deepTealOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="deepTealOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="deepTealOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="deepTealOrderbookViewAmountColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealOrderbookViewProgressBarColor">@color/deepTealProgressBarColor</color>
+    <color name="deepTealOrderbookViewInfoViewColor">@color/deepTealInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="deepTealTradesViewBackgroundColor">@color/deepTealOrderbookViewBackgroundColor</color>
+    <color name="deepTealTradesViewHeaderTitleTextColor">@color/deepTealOrderbookViewHeaderTitleTextColor</color>
+    <color name="deepTealTradesViewHeaderSeparatorColor">@color/deepTealOrderbookViewHeaderSeparatorColor</color>
+    <color name="deepTealTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="deepTealTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="deepTealTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="deepTealTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="deepTealTradesViewBuyPriceColor">@color/deepTealOrderbookViewBuyPriceColor</color>
+    <color name="deepTealTradesViewSellPriceColor">@color/deepTealOrderbookViewSellPriceColor</color>
+    <color name="deepTealTradesViewAmountColor">@color/deepTealOrderbookViewAmountColor</color>
+    <color name="deepTealTradesViewTradeTimeColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealTradesViewProgressBarColor">@color/deepTealOrderbookViewProgressBarColor</color>
+    <color name="deepTealTradesViewInfoViewColor">@color/deepTealOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="deepTealOrderbookDetailsViewBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealOrderbookDetailsViewItemTitleColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookDetailsViewItemValueColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookDetailsViewItemSeparatorColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="deepTealOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="deepTealOrderbookDetailsViewProgressBarColor">@color/deepTealProgressBarColor</color>
+    <color name="deepTealOrderbookDetailsViewInfoViewCaptionColor">@color/deepTealSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="deepTealDialogBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealDialogTitleColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealDialogTextColor">@color/deepTealDialogTitleColor</color>
+    <color name="deepTealDialogButtonColor">@color/deepTealDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="deepTealDottedMapViewTitleColor">@color/deepTealPrimaryDarkTextColor</color>
+    <color name="deepTealDottedMapViewTextColor">@color/deepTealSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="deepTealNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="deepTealNavigationDrawerItemColor">@color/deepTealPrimaryLightColor</color>
+    <color name="deepTealNavigationDrawerSignInButtonContentColor">@color/deepTealButtonContentColor</color>
+    <color name="deepTealNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/deepTealAccentColor</color>
+    <color name="deepTealNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/deepTealDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="deepTealLabeledEditTextTitleColor">@color/deepTealSecondaryTextColor</color>
+    <color name="deepTealLabeledEditTextContainerColor">@color/deepTealPrimaryLightColor</color>
+    <color name="deepTealLabeledEditTextHintColor">#657786</color>
+    <color name="deepTealLabeledEditTextTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealLabeledEditTextCursorColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealLabeledEditTextLabelColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="deepTealQrCodeScannerBorderColor">#747474</color>
+    <color name="deepTealQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="deepTealSortPanelBackgroundColor">#1b4f5d</color>
+    <color name="deepTealSortPanelSelectedTitleColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealSortPanelUnselectedTitleColor">@color/deepTealPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="deepTealSwitchPointerActivatedColor">@color/deepTealAccentColor</color>
+    <color name="deepTealSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="deepTealSwitchBackgroundActivatedColor">@color/deepTealAccentColor</color>
+    <color name="deepTealSwitchBackgroundDeactivatedColor">@color/deepTealSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="deepTealPopupMenuBackgroundColor">@color/deepTealPrimaryColor</color>
+    <color name="deepTealPopupMenuTitleColor">@color/deepTealPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="deepTealPinEntryKeypadDigitButtonTextColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="deepTealPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="deepTealPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/deepTealAccentColor</color>
+    <color name="deepTealPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/deepTealPrimaryTextColor</color>
+    <color name="deepTealPinEntryKeypadDisabledActionButtonForegroundColor">@color/deepTealPrimaryTextColor</color>
+
+
+
+    <!-- Night Blue -->
+
+    <!-- General -->
+    <color name="nightBluePrimaryColor">#222e3c</color>
+    <color name="nightBluePrimaryLightColor">#2b3a4c</color>
+    <color name="nightBluePrimaryDarkColor">#19222d</color>
+    <color name="nightBluePrimaryTextColor">@color/white</color>
+    <color name="nightBluePrimaryDarkTextColor">#cad2d6</color>
+    <color name="nightBlueSecondaryTextColor">#809aaf</color>
+    <color name="nightBlueSecondaryDarkTextColor">#5d7182</color>
+    <color name="nightBlueAccentColor">#61a9e1</color>
+    <color name="nightBlueDarkAccentColor">#579cd1</color>
+    <color name="nightBlueContentContainerColor">#151d26</color>
+    <color name="nightBlueContentContainerLightColor">@color/nightBluePrimaryDarkColor</color>
+    <color name="nightBlueContentContainerTextColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueTabIndicatorColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueInfoViewColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueProgressBarColor">@color/nightBlueAccentColor</color>
+    <color name="nightBlueGradientStartColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBlueGradientEndColor">@color/nightBluePrimaryLightColor</color>
+    <color name="nightBlueLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="nightBlueLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="nightBlueFeedbackCardViewColor">@color/nightBlueCardViewBackgroundColor</color>
+    <color name="nightBlueFeedbackFooterButtonColor">@color/nightBlueAccentColor</color>
+    <color name="nightBlueSettingsBackgroundColor">@color/nightBluePrimaryDarkColor</color>
+
+    <!-- Button -->
+    <color name="nightBlueButtonContentColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueButtonReleasedStateBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBlueButtonPressedStateBackgroundColor">#1a2430</color>
+
+    <!-- CardView -->
+    <color name="nightBlueCardViewBackgroundColor">#1c2733</color>
+    <color name="nightBlueCardViewPrimaryTextColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueCardViewDarkPrimaryTextColor">@color/nightBlueSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="nightBlueSwitchOptionsViewTitleTextColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueSwitchOptionsViewSwitchColor">@color/nightBlueAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="nightBluePriceChartViewBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBluePriceChartViewProgressBarColor">@color/nightBlueProgressBarColor</color>
+    <color name="nightBluePriceChartViewInfoViewColor">@color/nightBlueInfoViewColor</color>
+    <color name="nightBluePriceChartViewInfoFieldsDefaultTextColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBluePriceChartViewAxisGridColor">#80888888</color>
+    <color name="nightBluePriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="nightBluePriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="nightBluePriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="nightBluePriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="nightBluePriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="nightBluePriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="nightBluePriceChartViewTabTextColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBluePriceChartViewTabIndicatorColor">@color/nightBlueTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="nightBlueDepthChartViewBackgroundColor">@color/nightBluePriceChartViewBackgroundColor</color>
+    <color name="nightBlueDepthChartViewProgressbarColor">@color/nightBluePriceChartViewProgressBarColor</color>
+    <color name="nightBlueDepthChartViewInfoViewColor">@color/nightBluePriceChartViewInfoViewColor</color>
+    <color name="nightBlueDepthChartViewInfoFieldsDefaultTextColor">@color/nightBluePriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="nightBlueDepthChartViewAxisGridColor">@color/nightBluePriceChartViewAxisGridColor</color>
+    <color name="nightBlueDepthChartViewHighlighterColor">@color/nightBluePriceChartViewHighlighterColor</color>
+    <color name="nightBlueDepthChartViewPositiveColor">@color/nightBluePriceChartViewPositiveColor</color>
+    <color name="nightBlueDepthChartViewNegativeColor">@color/nightBluePriceChartViewNegativeColor</color>
+    <color name="nightBlueDepthChartViewNeutralColor">@color/nightBluePriceChartViewNeutralColor</color>
+    <color name="nightBlueDepthChartViewTabTextColor">@color/nightBluePriceChartViewTabTextColor</color>
+    <color name="nightBlueDepthChartViewTabIndicatorColor">@color/nightBluePriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="nightBlueMarketDetailsViewBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBlueMarketDetailsViewItemTitleColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueMarketDetailsViewItemValueColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueMarketDetailsViewItemSeparatorColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="nightBlueMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="nightBlueOrderbookViewBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBlueOrderbookViewHeaderTitleTextColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueOrderbookViewHeaderMoreButtonColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueOrderbookViewHeaderSeparatorColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="nightBlueOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="nightBlueOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="nightBlueOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="nightBlueOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="nightBlueOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="nightBlueOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="nightBlueOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="nightBlueOrderbookViewAmountColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueOrderbookViewProgressBarColor">@color/nightBlueProgressBarColor</color>
+    <color name="nightBlueOrderbookViewInfoViewColor">@color/nightBlueInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="nightBlueTradesViewBackgroundColor">@color/nightBlueOrderbookViewBackgroundColor</color>
+    <color name="nightBlueTradesViewHeaderTitleTextColor">@color/nightBlueOrderbookViewHeaderTitleTextColor</color>
+    <color name="nightBlueTradesViewHeaderSeparatorColor">@color/nightBlueOrderbookViewHeaderSeparatorColor</color>
+    <color name="nightBlueTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="nightBlueTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="nightBlueTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="nightBlueTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="nightBlueTradesViewBuyPriceColor">@color/nightBlueOrderbookViewBuyPriceColor</color>
+    <color name="nightBlueTradesViewSellPriceColor">@color/nightBlueOrderbookViewSellPriceColor</color>
+    <color name="nightBlueTradesViewAmountColor">@color/nightBlueOrderbookViewAmountColor</color>
+    <color name="nightBlueTradesViewTradeTimeColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueTradesViewProgressBarColor">@color/nightBlueOrderbookViewProgressBarColor</color>
+    <color name="nightBlueTradesViewInfoViewColor">@color/nightBlueOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="nightBlueOrderbookDetailsViewBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBlueOrderbookDetailsViewItemTitleColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueOrderbookDetailsViewItemValueColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueOrderbookDetailsViewItemSeparatorColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="nightBlueOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="nightBlueOrderbookDetailsViewProgressBarColor">@color/nightBlueProgressBarColor</color>
+    <color name="nightBlueOrderbookDetailsViewInfoViewCaptionColor">@color/nightBlueSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="nightBlueDialogBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBlueDialogTitleColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueDialogTextColor">@color/nightBlueDialogTitleColor</color>
+    <color name="nightBlueDialogButtonColor">@color/nightBlueDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="nightBlueDottedMapViewTitleColor">@color/nightBluePrimaryDarkTextColor</color>
+    <color name="nightBlueDottedMapViewTextColor">@color/nightBlueSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="nightBlueNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="nightBlueNavigationDrawerItemColor">#32445C</color>
+    <color name="nightBlueNavigationDrawerSignInButtonContentColor">@color/nightBlueButtonContentColor</color>
+    <color name="nightBlueNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/nightBlueAccentColor</color>
+    <color name="nightBlueNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/nightBlueDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="nightBlueLabeledEditTextTitleColor">@color/nightBlueSecondaryTextColor</color>
+    <color name="nightBlueLabeledEditTextContainerColor">@color/nightBluePrimaryLightColor</color>
+    <color name="nightBlueLabeledEditTextHintColor">#657786</color>
+    <color name="nightBlueLabeledEditTextTextColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueLabeledEditTextCursorColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueLabeledEditTextLabelColor">@color/nightBluePrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="nightBlueQrCodeScannerBorderColor">#747474</color>
+    <color name="nightBlueQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="nightBlueSortPanelBackgroundColor">#3a516d</color>
+    <color name="nightBlueSortPanelSelectedTitleColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBlueSortPanelUnselectedTitleColor">@color/nightBluePrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="nightBlueSwitchPointerActivatedColor">@color/nightBlueAccentColor</color>
+    <color name="nightBlueSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="nightBlueSwitchBackgroundActivatedColor">@color/nightBlueAccentColor</color>
+    <color name="nightBlueSwitchBackgroundDeactivatedColor">@color/nightBlueSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="nightBluePopupMenuBackgroundColor">@color/nightBluePrimaryColor</color>
+    <color name="nightBluePopupMenuTitleColor">@color/nightBluePrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="nightBluePinEntryKeypadDigitButtonTextColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBluePinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="nightBluePinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="nightBluePinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/nightBlueAccentColor</color>
+    <color name="nightBluePinEntryKeypadEnabledDeleteButtonForegroundColor">@color/nightBluePrimaryTextColor</color>
+    <color name="nightBluePinEntryKeypadDisabledActionButtonForegroundColor">@color/nightBluePrimaryTextColor</color>
+
+
+
+
+    <!-- Dark Green -->
+
+    <!-- General -->
+    <color name="darkGreenPrimaryColor">#284d4b</color>
+    <color name="darkGreenPrimaryLightColor">#2d5654</color>
+    <color name="darkGreenPrimaryDarkColor">#1f3c3b</color>
+    <color name="darkGreenPrimaryTextColor">@color/white</color>
+    <color name="darkGreenPrimaryDarkTextColor">#cad2d6</color>
+    <color name="darkGreenSecondaryTextColor">#cccec9</color>
+    <color name="darkGreenSecondaryDarkTextColor">#9fa09b</color>
+    <color name="darkGreenAccentColor">#ad6267</color>
+    <color name="darkGreenDarkAccentColor">#a15459</color>
+    <color name="darkGreenContentContainerColor">#172b2a</color>
+    <color name="darkGreenContentContainerLightColor">#1e3836</color>
+    <color name="darkGreenContentContainerTextColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenTabIndicatorColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenInfoViewColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenProgressBarColor">@color/darkGreenAccentColor</color>
+    <color name="darkGreenGradientStartColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenGradientEndColor">@color/darkGreenPrimaryLightColor</color>
+    <color name="darkGreenLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="darkGreenLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="darkGreenFeedbackCardViewColor">@color/darkGreenCardViewBackgroundColor</color>
+    <color name="darkGreenFeedbackFooterButtonColor">@color/darkGreenAccentColor</color>
+    <color name="darkGreenSettingsBackgroundColor">@color/darkGreenPrimaryDarkColor</color>
+
+    <!-- Button -->
+    <color name="darkGreenButtonContentColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenButtonReleasedStateBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenButtonPressedStateBackgroundColor">#203f3e</color>
+
+    <!-- CardView -->
+    <color name="darkGreenCardViewBackgroundColor">#213c3d</color>
+    <color name="darkGreenCardViewPrimaryTextColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenCardViewDarkPrimaryTextColor">@color/darkGreenSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="darkGreenSwitchOptionsViewTitleTextColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenSwitchOptionsViewSwitchColor">@color/darkGreenAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="darkGreenPriceChartViewBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenPriceChartViewProgressBarColor">@color/darkGreenProgressBarColor</color>
+    <color name="darkGreenPriceChartViewInfoViewColor">@color/darkGreenInfoViewColor</color>
+    <color name="darkGreenPriceChartViewInfoFieldsDefaultTextColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenPriceChartViewAxisGridColor">#80888888</color>
+    <color name="darkGreenPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="darkGreenPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="darkGreenPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="darkGreenPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="darkGreenPriceChartViewVolumeBarsColor">#9fa81f</color>
+    <color name="darkGreenPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="darkGreenPriceChartViewTabTextColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenPriceChartViewTabIndicatorColor">@color/darkGreenTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="darkGreenDepthChartViewBackgroundColor">@color/darkGreenPriceChartViewBackgroundColor</color>
+    <color name="darkGreenDepthChartViewProgressbarColor">@color/darkGreenPriceChartViewProgressBarColor</color>
+    <color name="darkGreenDepthChartViewInfoViewColor">@color/darkGreenPriceChartViewInfoViewColor</color>
+    <color name="darkGreenDepthChartViewInfoFieldsDefaultTextColor">@color/darkGreenPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="darkGreenDepthChartViewAxisGridColor">@color/darkGreenPriceChartViewAxisGridColor</color>
+    <color name="darkGreenDepthChartViewHighlighterColor">@color/darkGreenPriceChartViewHighlighterColor</color>
+    <color name="darkGreenDepthChartViewPositiveColor">@color/darkGreenPriceChartViewPositiveColor</color>
+    <color name="darkGreenDepthChartViewNegativeColor">@color/darkGreenPriceChartViewNegativeColor</color>
+    <color name="darkGreenDepthChartViewNeutralColor">@color/darkGreenPriceChartViewNeutralColor</color>
+    <color name="darkGreenDepthChartViewTabTextColor">@color/darkGreenPriceChartViewTabTextColor</color>
+    <color name="darkGreenDepthChartViewTabIndicatorColor">@color/darkGreenPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="darkGreenMarketDetailsViewBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenMarketDetailsViewItemTitleColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenMarketDetailsViewItemValueColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenMarketDetailsViewItemSeparatorColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="darkGreenMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="darkGreenOrderbookViewBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenOrderbookViewHeaderTitleTextColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenOrderbookViewHeaderMoreButtonColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenOrderbookViewHeaderSeparatorColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="darkGreenOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="darkGreenOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="darkGreenOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="darkGreenOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="darkGreenOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="darkGreenOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="darkGreenOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="darkGreenOrderbookViewAmountColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenOrderbookViewProgressBarColor">@color/darkGreenProgressBarColor</color>
+    <color name="darkGreenOrderbookViewInfoViewColor">@color/darkGreenInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="darkGreenTradesViewBackgroundColor">@color/darkGreenOrderbookViewBackgroundColor</color>
+    <color name="darkGreenTradesViewHeaderTitleTextColor">@color/darkGreenOrderbookViewHeaderTitleTextColor</color>
+    <color name="darkGreenTradesViewHeaderSeparatorColor">@color/darkGreenOrderbookViewHeaderSeparatorColor</color>
+    <color name="darkGreenTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="darkGreenTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="darkGreenTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="darkGreenTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="darkGreenTradesViewBuyPriceColor">@color/darkGreenOrderbookViewBuyPriceColor</color>
+    <color name="darkGreenTradesViewSellPriceColor">@color/darkGreenOrderbookViewSellPriceColor</color>
+    <color name="darkGreenTradesViewAmountColor">@color/darkGreenOrderbookViewAmountColor</color>
+    <color name="darkGreenTradesViewTradeTimeColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenTradesViewProgressBarColor">@color/darkGreenOrderbookViewProgressBarColor</color>
+    <color name="darkGreenTradesViewInfoViewColor">@color/darkGreenOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="darkGreenOrderbookDetailsViewBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenOrderbookDetailsViewItemTitleColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenOrderbookDetailsViewItemValueColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenOrderbookDetailsViewItemSeparatorColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="darkGreenOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="darkGreenOrderbookDetailsViewProgressBarColor">@color/darkGreenProgressBarColor</color>
+    <color name="darkGreenOrderbookDetailsViewInfoViewCaptionColor">@color/darkGreenSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="darkGreenDialogBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenDialogTitleColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenDialogTextColor">@color/darkGreenDialogTitleColor</color>
+    <color name="darkGreenDialogButtonColor">@color/darkGreenDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="darkGreenDottedMapViewTitleColor">@color/darkGreenPrimaryDarkTextColor</color>
+    <color name="darkGreenDottedMapViewTextColor">@color/darkGreenSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="darkGreenNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="darkGreenNavigationDrawerItemColor">@color/darkGreenPrimaryLightColor</color>
+    <color name="darkGreenNavigationDrawerSignInButtonContentColor">@color/darkGreenButtonContentColor</color>
+    <color name="darkGreenNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/darkGreenAccentColor</color>
+    <color name="darkGreenNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/darkGreenDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="darkGreenLabeledEditTextTitleColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenLabeledEditTextContainerColor">#2f5b59</color>
+    <color name="darkGreenLabeledEditTextHintColor">@color/darkGreenSecondaryTextColor</color>
+    <color name="darkGreenLabeledEditTextTextColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenLabeledEditTextCursorColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenLabeledEditTextLabelColor">@color/darkGreenPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="darkGreenQrCodeScannerBorderColor">#747474</color>
+    <color name="darkGreenQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="darkGreenSortPanelBackgroundColor">#3e7571</color>
+    <color name="darkGreenSortPanelSelectedTitleColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenSortPanelUnselectedTitleColor">@color/darkGreenPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="darkGreenSwitchPointerActivatedColor">@color/darkGreenAccentColor</color>
+    <color name="darkGreenSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="darkGreenSwitchBackgroundActivatedColor">@color/darkGreenAccentColor</color>
+    <color name="darkGreenSwitchBackgroundDeactivatedColor">@color/darkGreenSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="darkGreenPopupMenuBackgroundColor">@color/darkGreenPrimaryColor</color>
+    <color name="darkGreenPopupMenuTitleColor">@color/darkGreenPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="darkGreenPinEntryKeypadDigitButtonTextColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="darkGreenPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="darkGreenPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/darkGreenAccentColor</color>
+    <color name="darkGreenPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/darkGreenPrimaryTextColor</color>
+    <color name="darkGreenPinEntryKeypadDisabledActionButtonForegroundColor">@color/darkGreenPrimaryTextColor</color>
+
+
+
+
+    <!-- Pitch Black -->
+
+    <!-- General -->
+    <color name="pitchBlackPrimaryColor">#0c0c0c</color>
+    <color name="pitchBlackPrimaryLightColor">#0F0F0F</color>
+    <color name="pitchBlackPrimaryDarkColor">#070707</color>
+    <color name="pitchBlackPrimaryTextColor">@color/white</color>
+    <color name="pitchBlackPrimaryDarkTextColor">#cad2d6</color>
+    <color name="pitchBlackSecondaryTextColor">#efefef</color>
+    <color name="pitchBlackSecondaryDarkTextColor">#afafaf</color>
+    <color name="pitchBlackAccentColor">#b62c3c</color>
+    <color name="pitchBlackDarkAccentColor">#a31f2e</color>
+    <color name="pitchBlackContentContainerColor">#020202</color>
+    <color name="pitchBlackContentContainerLightColor">#0A0A0A</color>
+    <color name="pitchBlackContentContainerTextColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackTabIndicatorColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackInfoViewColor">#e0dfdd</color>
+    <color name="pitchBlackProgressBarColor">@color/pitchBlackAccentColor</color>
+    <color name="pitchBlackGradientStartColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackGradientEndColor">@color/pitchBlackPrimaryLightColor</color>
+    <color name="pitchBlackLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="pitchBlackLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="pitchBlackFeedbackCardViewColor">@color/black</color>
+    <color name="pitchBlackFeedbackFooterButtonColor">@color/pitchBlackAccentColor</color>
+    <color name="pitchBlackSettingsBackgroundColor">@color/pitchBlackPrimaryDarkColor</color>
+
+    <!-- Button -->
+    <color name="pitchBlackButtonContentColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackButtonReleasedStateBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackButtonPressedStateBackgroundColor">#040404</color>
+
+    <!-- CardView -->
+    <color name="pitchBlackCardViewBackgroundColor">#0F0F0F</color>
+    <color name="pitchBlackCardViewPrimaryTextColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackCardViewDarkPrimaryTextColor">@color/pitchBlackSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="pitchBlackSwitchOptionsViewTitleTextColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackSwitchOptionsViewSwitchColor">@color/pitchBlackAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="pitchBlackPriceChartViewBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackPriceChartViewProgressBarColor">@color/pitchBlackProgressBarColor</color>
+    <color name="pitchBlackPriceChartViewInfoViewColor">@color/pitchBlackInfoViewColor</color>
+    <color name="pitchBlackPriceChartViewInfoFieldsDefaultTextColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackPriceChartViewAxisGridColor">#80888888</color>
+    <color name="pitchBlackPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="pitchBlackPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="pitchBlackPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="pitchBlackPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="pitchBlackPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="pitchBlackPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="pitchBlackPriceChartViewTabTextColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackPriceChartViewTabIndicatorColor">@color/pitchBlackTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="pitchBlackDepthChartViewBackgroundColor">@color/pitchBlackPriceChartViewBackgroundColor</color>
+    <color name="pitchBlackDepthChartViewProgressbarColor">@color/pitchBlackPriceChartViewProgressBarColor</color>
+    <color name="pitchBlackDepthChartViewInfoViewColor">@color/pitchBlackPriceChartViewInfoViewColor</color>
+    <color name="pitchBlackDepthChartViewInfoFieldsDefaultTextColor">@color/pitchBlackPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="pitchBlackDepthChartViewAxisGridColor">@color/pitchBlackPriceChartViewAxisGridColor</color>
+    <color name="pitchBlackDepthChartViewHighlighterColor">@color/pitchBlackPriceChartViewHighlighterColor</color>
+    <color name="pitchBlackDepthChartViewPositiveColor">@color/pitchBlackPriceChartViewPositiveColor</color>
+    <color name="pitchBlackDepthChartViewNegativeColor">@color/pitchBlackPriceChartViewNegativeColor</color>
+    <color name="pitchBlackDepthChartViewNeutralColor">@color/pitchBlackPriceChartViewNeutralColor</color>
+    <color name="pitchBlackDepthChartViewTabTextColor">@color/pitchBlackPriceChartViewTabTextColor</color>
+    <color name="pitchBlackDepthChartViewTabIndicatorColor">@color/pitchBlackPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="pitchBlackMarketDetailsViewBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackMarketDetailsViewItemTitleColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackMarketDetailsViewItemValueColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackMarketDetailsViewItemSeparatorColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="pitchBlackMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="pitchBlackOrderbookViewBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackOrderbookViewHeaderTitleTextColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackOrderbookViewHeaderMoreButtonColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackOrderbookViewHeaderSeparatorColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="pitchBlackOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="pitchBlackOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="pitchBlackOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="pitchBlackOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="pitchBlackOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="pitchBlackOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="pitchBlackOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="pitchBlackOrderbookViewAmountColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackOrderbookViewProgressBarColor">@color/pitchBlackProgressBarColor</color>
+    <color name="pitchBlackOrderbookViewInfoViewColor">@color/pitchBlackInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="pitchBlackTradesViewBackgroundColor">@color/pitchBlackOrderbookViewBackgroundColor</color>
+    <color name="pitchBlackTradesViewHeaderTitleTextColor">@color/pitchBlackOrderbookViewHeaderTitleTextColor</color>
+    <color name="pitchBlackTradesViewHeaderSeparatorColor">@color/pitchBlackOrderbookViewHeaderSeparatorColor</color>
+    <color name="pitchBlackTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="pitchBlackTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="pitchBlackTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="pitchBlackTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="pitchBlackTradesViewBuyPriceColor">@color/pitchBlackOrderbookViewBuyPriceColor</color>
+    <color name="pitchBlackTradesViewSellPriceColor">@color/pitchBlackOrderbookViewSellPriceColor</color>
+    <color name="pitchBlackTradesViewAmountColor">@color/pitchBlackOrderbookViewAmountColor</color>
+    <color name="pitchBlackTradesViewTradeTimeColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackTradesViewProgressBarColor">@color/pitchBlackOrderbookViewProgressBarColor</color>
+    <color name="pitchBlackTradesViewInfoViewColor">@color/pitchBlackOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="pitchBlackOrderbookDetailsViewBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackOrderbookDetailsViewItemTitleColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackOrderbookDetailsViewItemValueColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackOrderbookDetailsViewItemSeparatorColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="pitchBlackOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="pitchBlackOrderbookDetailsViewProgressBarColor">@color/pitchBlackProgressBarColor</color>
+    <color name="pitchBlackOrderbookDetailsViewInfoViewCaptionColor">@color/pitchBlackSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="pitchBlackDialogBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackDialogTitleColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackDialogTextColor">@color/pitchBlackDialogTitleColor</color>
+    <color name="pitchBlackDialogButtonColor">@color/pitchBlackDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="pitchBlackDottedMapViewTitleColor">@color/pitchBlackPrimaryDarkTextColor</color>
+    <color name="pitchBlackDottedMapViewTextColor">@color/pitchBlackSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="pitchBlackNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="pitchBlackNavigationDrawerItemColor">@color/pitchBlackPrimaryLightColor</color>
+    <color name="pitchBlackNavigationDrawerSignInButtonContentColor">@color/pitchBlackButtonContentColor</color>
+    <color name="pitchBlackNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/pitchBlackAccentColor</color>
+    <color name="pitchBlackNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/pitchBlackDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="pitchBlackLabeledEditTextTitleColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackLabeledEditTextContainerColor">#1F1F1F</color>
+    <color name="pitchBlackLabeledEditTextHintColor">@color/pitchBlackSecondaryTextColor</color>
+    <color name="pitchBlackLabeledEditTextTextColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackLabeledEditTextCursorColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackLabeledEditTextLabelColor">@color/pitchBlackPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="pitchBlackQrCodeScannerBorderColor">#747474</color>
+    <color name="pitchBlackQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="pitchBlackSortPanelBackgroundColor">#1c1c1c</color>
+    <color name="pitchBlackSortPanelSelectedTitleColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackSortPanelUnselectedTitleColor">@color/pitchBlackPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="pitchBlackSwitchPointerActivatedColor">@color/pitchBlackAccentColor</color>
+    <color name="pitchBlackSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="pitchBlackSwitchBackgroundActivatedColor">@color/pitchBlackAccentColor</color>
+    <color name="pitchBlackSwitchBackgroundDeactivatedColor">@color/pitchBlackSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="pitchBlackPopupMenuBackgroundColor">@color/pitchBlackPrimaryColor</color>
+    <color name="pitchBlackPopupMenuTitleColor">@color/pitchBlackPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="pitchBlackPinEntryKeypadDigitButtonTextColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="pitchBlackPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="pitchBlackPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/pitchBlackAccentColor</color>
+    <color name="pitchBlackPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/pitchBlackPrimaryTextColor</color>
+    <color name="pitchBlackPinEntryKeypadDisabledActionButtonForegroundColor">@color/pitchBlackPrimaryTextColor</color>
+
+
+
+
+    <!-- Grayish Blue -->
+
+    <!-- General -->
+    <color name="grayishBluePrimaryColor">#2B303C</color>
+    <color name="grayishBluePrimaryLightColor">#333947</color>
+    <color name="grayishBluePrimaryDarkColor">#222630</color>
+    <color name="grayishBluePrimaryTextColor">@color/white</color>
+    <color name="grayishBluePrimaryDarkTextColor">#cad2d6</color>
+    <color name="grayishBlueSecondaryTextColor">#809aaf</color>
+    <color name="grayishBlueSecondaryDarkTextColor">#5d7182</color>
+    <color name="grayishBlueAccentColor">#F55663</color>
+    <color name="grayishBlueDarkAccentColor">#db3d4a</color>
+    <color name="grayishBlueContentContainerColor">#1c2028</color>
+    <color name="grayishBlueContentContainerLightColor">@color/grayishBluePrimaryDarkColor</color>
+    <color name="grayishBlueContentContainerTextColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueTabIndicatorColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueInfoViewColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueProgressBarColor">@color/grayishBlueAccentColor</color>
+    <color name="grayishBlueGradientStartColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBlueGradientEndColor">@color/grayishBluePrimaryLightColor</color>
+    <color name="grayishBlueLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="grayishBlueLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="grayishBlueFeedbackCardViewColor">@color/grayishBlueCardViewBackgroundColor</color>
+    <color name="grayishBlueFeedbackFooterButtonColor">@color/grayishBlueAccentColor</color>
+    <color name="grayishBlueSettingsBackgroundColor">@color/grayishBlueContentContainerLightColor</color>
+
+    <!-- Button -->
+    <color name="grayishBlueButtonContentColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueButtonReleasedStateBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBlueButtonPressedStateBackgroundColor">#232833</color>
+
+    <!-- CardView -->
+    <color name="grayishBlueCardViewBackgroundColor">#232935</color>
+    <color name="grayishBlueCardViewPrimaryTextColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueCardViewDarkPrimaryTextColor">@color/grayishBlueSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="grayishBlueSwitchOptionsViewTitleTextColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueSwitchOptionsViewSwitchColor">@color/grayishBlueAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="grayishBluePriceChartViewBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBluePriceChartViewProgressBarColor">@color/grayishBlueProgressBarColor</color>
+    <color name="grayishBluePriceChartViewInfoViewColor">@color/grayishBlueInfoViewColor</color>
+    <color name="grayishBluePriceChartViewInfoFieldsDefaultTextColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBluePriceChartViewAxisGridColor">#80888888</color>
+    <color name="grayishBluePriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="grayishBluePriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="grayishBluePriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="grayishBluePriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="grayishBluePriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="grayishBluePriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="grayishBluePriceChartViewTabTextColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBluePriceChartViewTabIndicatorColor">@color/grayishBlueTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="grayishBlueDepthChartViewBackgroundColor">@color/grayishBluePriceChartViewBackgroundColor</color>
+    <color name="grayishBlueDepthChartViewProgressbarColor">@color/grayishBluePriceChartViewProgressBarColor</color>
+    <color name="grayishBlueDepthChartViewInfoViewColor">@color/grayishBluePriceChartViewInfoViewColor</color>
+    <color name="grayishBlueDepthChartViewInfoFieldsDefaultTextColor">@color/grayishBluePriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="grayishBlueDepthChartViewAxisGridColor">@color/grayishBluePriceChartViewAxisGridColor</color>
+    <color name="grayishBlueDepthChartViewHighlighterColor">@color/grayishBluePriceChartViewHighlighterColor</color>
+    <color name="grayishBlueDepthChartViewPositiveColor">@color/grayishBluePriceChartViewPositiveColor</color>
+    <color name="grayishBlueDepthChartViewNegativeColor">@color/grayishBluePriceChartViewNegativeColor</color>
+    <color name="grayishBlueDepthChartViewNeutralColor">@color/grayishBluePriceChartViewNeutralColor</color>
+    <color name="grayishBlueDepthChartViewTabTextColor">@color/grayishBluePriceChartViewTabTextColor</color>
+    <color name="grayishBlueDepthChartViewTabIndicatorColor">@color/grayishBluePriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="grayishBlueMarketDetailsViewBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBlueMarketDetailsViewItemTitleColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueMarketDetailsViewItemValueColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueMarketDetailsViewItemSeparatorColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="grayishBlueMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="grayishBlueOrderbookViewBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBlueOrderbookViewHeaderTitleTextColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueOrderbookViewHeaderMoreButtonColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueOrderbookViewHeaderSeparatorColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="grayishBlueOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="grayishBlueOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="grayishBlueOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="grayishBlueOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="grayishBlueOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="grayishBlueOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="grayishBlueOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="grayishBlueOrderbookViewAmountColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueOrderbookViewProgressBarColor">@color/grayishBlueProgressBarColor</color>
+    <color name="grayishBlueOrderbookViewInfoViewColor">@color/grayishBlueInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="grayishBlueTradesViewBackgroundColor">@color/grayishBlueOrderbookViewBackgroundColor</color>
+    <color name="grayishBlueTradesViewHeaderTitleTextColor">@color/grayishBlueOrderbookViewHeaderTitleTextColor</color>
+    <color name="grayishBlueTradesViewHeaderSeparatorColor">@color/grayishBlueOrderbookViewHeaderSeparatorColor</color>
+    <color name="grayishBlueTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="grayishBlueTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="grayishBlueTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="grayishBlueTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="grayishBlueTradesViewBuyPriceColor">@color/grayishBlueOrderbookViewBuyPriceColor</color>
+    <color name="grayishBlueTradesViewSellPriceColor">@color/grayishBlueOrderbookViewSellPriceColor</color>
+    <color name="grayishBlueTradesViewAmountColor">@color/grayishBlueOrderbookViewAmountColor</color>
+    <color name="grayishBlueTradesViewTradeTimeColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueTradesViewProgressBarColor">@color/grayishBlueOrderbookViewProgressBarColor</color>
+    <color name="grayishBlueTradesViewInfoViewColor">@color/grayishBlueOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="grayishBlueOrderbookDetailsViewBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBlueOrderbookDetailsViewItemTitleColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueOrderbookDetailsViewItemValueColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueOrderbookDetailsViewItemSeparatorColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="grayishBlueOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="grayishBlueOrderbookDetailsViewProgressBarColor">@color/grayishBlueProgressBarColor</color>
+    <color name="grayishBlueOrderbookDetailsViewInfoViewCaptionColor">@color/grayishBlueSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="grayishBlueDialogBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBlueDialogTitleColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueDialogTextColor">@color/grayishBlueDialogTitleColor</color>
+    <color name="grayishBlueDialogButtonColor">@color/grayishBlueDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="grayishBlueDottedMapViewTitleColor">@color/grayishBluePrimaryDarkTextColor</color>
+    <color name="grayishBlueDottedMapViewTextColor">@color/grayishBlueSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="grayishBlueNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="grayishBlueNavigationDrawerItemColor">@color/grayishBluePrimaryLightColor</color>
+    <color name="grayishBlueNavigationDrawerSignInButtonContentColor">@color/grayishBlueButtonContentColor</color>
+    <color name="grayishBlueNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/grayishBlueAccentColor</color>
+    <color name="grayishBlueNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/grayishBlueDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="grayishBlueLabeledEditTextTitleColor">@color/grayishBlueSecondaryTextColor</color>
+    <color name="grayishBlueLabeledEditTextContainerColor">@color/grayishBluePrimaryLightColor</color>
+    <color name="grayishBlueLabeledEditTextHintColor">#657786</color>
+    <color name="grayishBlueLabeledEditTextTextColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueLabeledEditTextCursorColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueLabeledEditTextLabelColor">@color/grayishBluePrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="grayishBlueQrCodeScannerBorderColor">#747474</color>
+    <color name="grayishBlueQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="grayishBlueSortPanelBackgroundColor">#485060</color>
+    <color name="grayishBlueSortPanelSelectedTitleColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBlueSortPanelUnselectedTitleColor">@color/grayishBluePrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="grayishBlueSwitchPointerActivatedColor">@color/grayishBlueAccentColor</color>
+    <color name="grayishBlueSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="grayishBlueSwitchBackgroundActivatedColor">@color/grayishBlueAccentColor</color>
+    <color name="grayishBlueSwitchBackgroundDeactivatedColor">@color/grayishBlueSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="grayishBluePopupMenuBackgroundColor">@color/grayishBluePrimaryColor</color>
+    <color name="grayishBluePopupMenuTitleColor">@color/grayishBluePrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="grayishBluePinEntryKeypadDigitButtonTextColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBluePinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="grayishBluePinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="grayishBluePinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/grayishBlueAccentColor</color>
+    <color name="grayishBluePinEntryKeypadEnabledDeleteButtonForegroundColor">@color/grayishBluePrimaryTextColor</color>
+    <color name="grayishBluePinEntryKeypadDisabledActionButtonForegroundColor">@color/grayishBluePrimaryTextColor</color>
+
+
+
+
+    <!-- Bright Gray -->
+
+    <!-- General -->
+    <color name="brightGrayPrimaryColor">#353c44</color>
+    <color name="brightGrayPrimaryLightColor">#3f4851</color>
+    <color name="brightGrayPrimaryDarkColor">#1f2427</color>
+    <color name="brightGrayPrimaryTextColor">@color/white</color>
+    <color name="brightGrayPrimaryDarkTextColor">#cad2d6</color>
+    <color name="brightGraySecondaryTextColor">#c8c8c8</color>
+    <color name="brightGraySecondaryDarkTextColor">#a0a0a0</color>
+    <color name="brightGrayAccentColor">#fa9500</color>
+    <color name="brightGrayDarkAccentColor">#d8850a</color>
+    <color name="brightGrayContentContainerColor">#1f2427</color>
+    <color name="brightGrayContentContainerLightColor">#2a3135</color>
+    <color name="brightGrayContentContainerTextColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayTabIndicatorColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayInfoViewColor">#b6b6b6</color>
+    <color name="brightGrayProgressBarColor">@color/brightGrayAccentColor</color>
+    <color name="brightGrayGradientStartColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayGradientEndColor">@color/brightGrayPrimaryLightColor</color>
+    <color name="brightGrayLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="brightGrayLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="brightGrayFeedbackCardViewColor">#2b3138</color>
+    <color name="brightGrayFeedbackFooterButtonColor">@color/brightGrayAccentColor</color>
+    <color name="brightGraySettingsBackgroundColor">@color/brightGrayContentContainerLightColor</color>
+
+    <!-- Button -->
+    <color name="brightGrayButtonContentColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayButtonReleasedStateBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayButtonPressedStateBackgroundColor">#272d33</color>
+
+    <!-- CardView -->
+    <color name="brightGrayCardViewBackgroundColor">#2e3639</color>
+    <color name="brightGrayCardViewPrimaryTextColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayCardViewDarkPrimaryTextColor">@color/brightGraySecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="brightGraySwitchOptionsViewTitleTextColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGraySwitchOptionsViewSwitchColor">@color/brightGrayAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="brightGrayPriceChartViewBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayPriceChartViewProgressBarColor">@color/brightGrayProgressBarColor</color>
+    <color name="brightGrayPriceChartViewInfoViewColor">@color/brightGrayInfoViewColor</color>
+    <color name="brightGrayPriceChartViewInfoFieldsDefaultTextColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayPriceChartViewAxisGridColor">#80888888</color>
+    <color name="brightGrayPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="brightGrayPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="brightGrayPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="brightGrayPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="brightGrayPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="brightGrayPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="brightGrayPriceChartViewTabTextColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayPriceChartViewTabIndicatorColor">@color/brightGrayTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="brightGrayDepthChartViewBackgroundColor">@color/brightGrayPriceChartViewBackgroundColor</color>
+    <color name="brightGrayDepthChartViewProgressbarColor">@color/brightGrayPriceChartViewProgressBarColor</color>
+    <color name="brightGrayDepthChartViewInfoViewColor">@color/brightGrayPriceChartViewInfoViewColor</color>
+    <color name="brightGrayDepthChartViewInfoFieldsDefaultTextColor">@color/brightGrayPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="brightGrayDepthChartViewAxisGridColor">@color/brightGrayPriceChartViewAxisGridColor</color>
+    <color name="brightGrayDepthChartViewHighlighterColor">@color/brightGrayPriceChartViewHighlighterColor</color>
+    <color name="brightGrayDepthChartViewPositiveColor">@color/brightGrayPriceChartViewPositiveColor</color>
+    <color name="brightGrayDepthChartViewNegativeColor">@color/brightGrayPriceChartViewNegativeColor</color>
+    <color name="brightGrayDepthChartViewNeutralColor">@color/brightGrayPriceChartViewNeutralColor</color>
+    <color name="brightGrayDepthChartViewTabTextColor">@color/brightGrayPriceChartViewTabTextColor</color>
+    <color name="brightGrayDepthChartViewTabIndicatorColor">@color/brightGrayPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="brightGrayMarketDetailsViewBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayMarketDetailsViewItemTitleColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayMarketDetailsViewItemValueColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayMarketDetailsViewItemSeparatorColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="brightGrayMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="brightGrayOrderbookViewBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayOrderbookViewHeaderTitleTextColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayOrderbookViewHeaderMoreButtonColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayOrderbookViewHeaderSeparatorColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="brightGrayOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="brightGrayOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="brightGrayOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="brightGrayOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="brightGrayOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="brightGrayOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="brightGrayOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="brightGrayOrderbookViewAmountColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayOrderbookViewProgressBarColor">@color/brightGrayProgressBarColor</color>
+    <color name="brightGrayOrderbookViewInfoViewColor">@color/brightGrayInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="brightGrayTradesViewBackgroundColor">@color/brightGrayOrderbookViewBackgroundColor</color>
+    <color name="brightGrayTradesViewHeaderTitleTextColor">@color/brightGrayOrderbookViewHeaderTitleTextColor</color>
+    <color name="brightGrayTradesViewHeaderSeparatorColor">@color/brightGrayOrderbookViewHeaderSeparatorColor</color>
+    <color name="brightGrayTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="brightGrayTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="brightGrayTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="brightGrayTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="brightGrayTradesViewBuyPriceColor">@color/brightGrayOrderbookViewBuyPriceColor</color>
+    <color name="brightGrayTradesViewSellPriceColor">@color/brightGrayOrderbookViewSellPriceColor</color>
+    <color name="brightGrayTradesViewAmountColor">@color/brightGrayOrderbookViewAmountColor</color>
+    <color name="brightGrayTradesViewTradeTimeColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayTradesViewProgressBarColor">@color/brightGrayOrderbookViewProgressBarColor</color>
+    <color name="brightGrayTradesViewInfoViewColor">@color/brightGrayOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="brightGrayOrderbookDetailsViewBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayOrderbookDetailsViewItemTitleColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayOrderbookDetailsViewItemValueColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayOrderbookDetailsViewItemSeparatorColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="brightGrayOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="brightGrayOrderbookDetailsViewProgressBarColor">@color/brightGrayProgressBarColor</color>
+    <color name="brightGrayOrderbookDetailsViewInfoViewCaptionColor">@color/brightGraySecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="brightGrayDialogBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayDialogTitleColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayDialogTextColor">@color/brightGrayDialogTitleColor</color>
+    <color name="brightGrayDialogButtonColor">@color/brightGrayDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="brightGrayDottedMapViewTitleColor">@color/brightGrayPrimaryDarkTextColor</color>
+    <color name="brightGrayDottedMapViewTextColor">@color/brightGraySecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="brightGrayNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="brightGrayNavigationDrawerItemColor">@color/brightGrayPrimaryLightColor</color>
+    <color name="brightGrayNavigationDrawerSignInButtonContentColor">@color/brightGrayButtonContentColor</color>
+    <color name="brightGrayNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/brightGrayAccentColor</color>
+    <color name="brightGrayNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/brightGrayDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="brightGrayLabeledEditTextTitleColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayLabeledEditTextContainerColor">@color/brightGrayPrimaryLightColor</color>
+    <color name="brightGrayLabeledEditTextHintColor">@color/brightGraySecondaryTextColor</color>
+    <color name="brightGrayLabeledEditTextTextColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayLabeledEditTextCursorColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayLabeledEditTextLabelColor">@color/brightGrayPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="brightGrayQrCodeScannerBorderColor">#747474</color>
+    <color name="brightGrayQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="brightGraySortPanelBackgroundColor">#4b5560</color>
+    <color name="brightGraySortPanelSelectedTitleColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGraySortPanelUnselectedTitleColor">@color/brightGrayPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="brightGraySwitchPointerActivatedColor">@color/brightGrayAccentColor</color>
+    <color name="brightGraySwitchPointerDeactivatedColor">@color/white</color>
+    <color name="brightGraySwitchBackgroundActivatedColor">@color/brightGrayAccentColor</color>
+    <color name="brightGraySwitchBackgroundDeactivatedColor">@color/brightGraySecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="brightGrayPopupMenuBackgroundColor">@color/brightGrayPrimaryColor</color>
+    <color name="brightGrayPopupMenuTitleColor">@color/brightGrayPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="brightGrayPinEntryKeypadDigitButtonTextColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="brightGrayPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="brightGrayPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/brightGrayAccentColor</color>
+    <color name="brightGrayPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/brightGrayPrimaryTextColor</color>
+    <color name="brightGrayPinEntryKeypadDisabledActionButtonForegroundColor">@color/brightGrayPrimaryTextColor</color>
+
+
+
+
+    <!-- Dark Silver -->
+
+    <!-- General -->
+    <color name="darkSilverPrimaryColor">#333436</color>
+    <color name="darkSilverPrimaryLightColor">#464749</color>
+    <color name="darkSilverPrimaryDarkColor">#1e1f21</color>
+    <color name="darkSilverPrimaryTextColor">@color/white</color>
+    <color name="darkSilverPrimaryDarkTextColor">#cad2d6</color>
+    <color name="darkSilverSecondaryTextColor">#a1a8b0</color>
+    <color name="darkSilverSecondaryDarkTextColor">#83898e</color>
+    <color name="darkSilverAccentColor">#1191d0</color>
+    <color name="darkSilverDarkAccentColor">#0e7fb7</color>
+    <color name="darkSilverContentContainerColor">#242526</color>
+    <color name="darkSilverContentContainerLightColor">#2b2c2d</color>
+    <color name="darkSilverContentContainerTextColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverTabIndicatorColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverInfoViewColor">#a2a9b1</color>
+    <color name="darkSilverProgressBarColor">@color/darkSilverAccentColor</color>
+    <color name="darkSilverGradientStartColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverGradientEndColor">@color/darkSilverPrimaryLightColor</color>
+    <color name="darkSilverLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="darkSilverLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="darkSilverFeedbackCardViewColor">#2b2c2d</color>
+    <color name="darkSilverFeedbackFooterButtonColor">@color/darkSilverAccentColor</color>
+    <color name="darkSilverSettingsBackgroundColor">@color/darkSilverContentContainerLightColor</color>
+
+    <!-- Button -->
+    <color name="darkSilverButtonContentColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverButtonReleasedStateBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverButtonPressedStateBackgroundColor">#262728</color>
+
+    <!-- CardView -->
+    <color name="darkSilverCardViewBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverCardViewPrimaryTextColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverCardViewDarkPrimaryTextColor">@color/darkSilverSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="darkSilverSwitchOptionsViewTitleTextColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverSwitchOptionsViewSwitchColor">@color/darkSilverAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="darkSilverPriceChartViewBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverPriceChartViewProgressBarColor">@color/darkSilverProgressBarColor</color>
+    <color name="darkSilverPriceChartViewInfoViewColor">@color/darkSilverInfoViewColor</color>
+    <color name="darkSilverPriceChartViewInfoFieldsDefaultTextColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverPriceChartViewAxisGridColor">#80888888</color>
+    <color name="darkSilverPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="darkSilverPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="darkSilverPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="darkSilverPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="darkSilverPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="darkSilverPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="darkSilverPriceChartViewTabTextColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverPriceChartViewTabIndicatorColor">@color/darkSilverTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="darkSilverDepthChartViewBackgroundColor">@color/darkSilverPriceChartViewBackgroundColor</color>
+    <color name="darkSilverDepthChartViewProgressbarColor">@color/darkSilverPriceChartViewProgressBarColor</color>
+    <color name="darkSilverDepthChartViewInfoViewColor">@color/darkSilverPriceChartViewInfoViewColor</color>
+    <color name="darkSilverDepthChartViewInfoFieldsDefaultTextColor">@color/darkSilverPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="darkSilverDepthChartViewAxisGridColor">@color/darkSilverPriceChartViewAxisGridColor</color>
+    <color name="darkSilverDepthChartViewHighlighterColor">@color/darkSilverPriceChartViewHighlighterColor</color>
+    <color name="darkSilverDepthChartViewPositiveColor">@color/darkSilverPriceChartViewPositiveColor</color>
+    <color name="darkSilverDepthChartViewNegativeColor">@color/darkSilverPriceChartViewNegativeColor</color>
+    <color name="darkSilverDepthChartViewNeutralColor">@color/darkSilverPriceChartViewNeutralColor</color>
+    <color name="darkSilverDepthChartViewTabTextColor">@color/darkSilverPriceChartViewTabTextColor</color>
+    <color name="darkSilverDepthChartViewTabIndicatorColor">@color/darkSilverPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="darkSilverMarketDetailsViewBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverMarketDetailsViewItemTitleColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverMarketDetailsViewItemValueColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverMarketDetailsViewItemSeparatorColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="darkSilverMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="darkSilverOrderbookViewBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverOrderbookViewHeaderTitleTextColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverOrderbookViewHeaderMoreButtonColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverOrderbookViewHeaderSeparatorColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="darkSilverOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="darkSilverOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="darkSilverOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="darkSilverOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="darkSilverOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="darkSilverOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="darkSilverOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="darkSilverOrderbookViewAmountColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverOrderbookViewProgressBarColor">@color/darkSilverProgressBarColor</color>
+    <color name="darkSilverOrderbookViewInfoViewColor">@color/darkSilverInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="darkSilverTradesViewBackgroundColor">@color/darkSilverOrderbookViewBackgroundColor</color>
+    <color name="darkSilverTradesViewHeaderTitleTextColor">@color/darkSilverOrderbookViewHeaderTitleTextColor</color>
+    <color name="darkSilverTradesViewHeaderSeparatorColor">@color/darkSilverOrderbookViewHeaderSeparatorColor</color>
+    <color name="darkSilverTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="darkSilverTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="darkSilverTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="darkSilverTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="darkSilverTradesViewBuyPriceColor">@color/darkSilverOrderbookViewBuyPriceColor</color>
+    <color name="darkSilverTradesViewSellPriceColor">@color/darkSilverOrderbookViewSellPriceColor</color>
+    <color name="darkSilverTradesViewAmountColor">@color/darkSilverOrderbookViewAmountColor</color>
+    <color name="darkSilverTradesViewTradeTimeColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverTradesViewProgressBarColor">@color/darkSilverOrderbookViewProgressBarColor</color>
+    <color name="darkSilverTradesViewInfoViewColor">@color/darkSilverOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="darkSilverOrderbookDetailsViewBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverOrderbookDetailsViewItemTitleColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverOrderbookDetailsViewItemValueColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverOrderbookDetailsViewItemSeparatorColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="darkSilverOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="darkSilverOrderbookDetailsViewProgressBarColor">@color/darkSilverProgressBarColor</color>
+    <color name="darkSilverOrderbookDetailsViewInfoViewCaptionColor">@color/darkSilverSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="darkSilverDialogBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverDialogTitleColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverDialogTextColor">@color/darkSilverDialogTitleColor</color>
+    <color name="darkSilverDialogButtonColor">@color/darkSilverDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="darkSilverDottedMapViewTitleColor">@color/darkSilverPrimaryDarkTextColor</color>
+    <color name="darkSilverDottedMapViewTextColor">@color/darkSilverSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="darkSilverNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="darkSilverNavigationDrawerItemColor">@color/darkSilverPrimaryLightColor</color>
+    <color name="darkSilverNavigationDrawerSignInButtonContentColor">@color/darkSilverButtonContentColor</color>
+    <color name="darkSilverNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/darkSilverAccentColor</color>
+    <color name="darkSilverNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/darkSilverDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="darkSilverLabeledEditTextTitleColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverLabeledEditTextContainerColor">@color/darkSilverPrimaryLightColor</color>
+    <color name="darkSilverLabeledEditTextHintColor">@color/darkSilverSecondaryTextColor</color>
+    <color name="darkSilverLabeledEditTextTextColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverLabeledEditTextCursorColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverLabeledEditTextLabelColor">@color/darkSilverPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="darkSilverQrCodeScannerBorderColor">#747474</color>
+    <color name="darkSilverQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="darkSilverSortPanelBackgroundColor">#4c4e51</color>
+    <color name="darkSilverSortPanelSelectedTitleColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverSortPanelUnselectedTitleColor">@color/darkSilverPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="darkSilverSwitchPointerActivatedColor">@color/darkSilverAccentColor</color>
+    <color name="darkSilverSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="darkSilverSwitchBackgroundActivatedColor">@color/darkSilverAccentColor</color>
+    <color name="darkSilverSwitchBackgroundDeactivatedColor">@color/darkSilverSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="darkSilverPopupMenuBackgroundColor">@color/darkSilverPrimaryColor</color>
+    <color name="darkSilverPopupMenuTitleColor">@color/darkSilverPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="darkSilverPinEntryKeypadDigitButtonTextColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="darkSilverPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="darkSilverPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/darkSilverAccentColor</color>
+    <color name="darkSilverPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/darkSilverPrimaryTextColor</color>
+    <color name="darkSilverPinEntryKeypadDisabledActionButtonForegroundColor">@color/darkSilverPrimaryTextColor</color>
+
+
+
+
+    <!-- Brownee -->
+
+    <!-- General -->
+    <color name="browneePrimaryColor">#2d2b39</color>
+    <color name="browneePrimaryLightColor">#383647</color>
+    <color name="browneePrimaryDarkColor">#22202b</color>
+    <color name="browneePrimaryTextColor">@color/white</color>
+    <color name="browneePrimaryDarkTextColor">#cad2d6</color>
+    <color name="browneeSecondaryTextColor">#95949a</color>
+    <color name="browneeSecondaryDarkTextColor">#706f77</color>
+    <color name="browneeAccentColor">#7986cb</color>
+    <color name="browneeDarkAccentColor">#636eaa</color>
+    <color name="browneeContentContainerColor">#23212d</color>
+    <color name="browneeContentContainerLightColor">#252330</color>
+    <color name="browneeContentContainerTextColor">#e0dfdd</color>
+    <color name="browneeTabIndicatorColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeInfoViewColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeProgressBarColor">@color/browneeAccentColor</color>
+    <color name="browneeGradientStartColor">@color/browneePrimaryColor</color>
+    <color name="browneeGradientEndColor">@color/browneePrimaryLightColor</color>
+    <color name="browneeLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="browneeLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="browneeFeedbackCardViewColor">#252333</color>
+    <color name="browneeFeedbackFooterButtonColor">@color/browneeAccentColor</color>
+    <color name="browneeSettingsBackgroundColor">@color/browneeContentContainerColor</color>
+
+    <!-- Button -->
+    <color name="browneeButtonContentColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeButtonReleasedStateBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneeButtonPressedStateBackgroundColor">#262430</color>
+
+    <!-- CardView -->
+    <color name="browneeCardViewBackgroundColor">#2a2838</color>
+    <color name="browneeCardViewPrimaryTextColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeCardViewDarkPrimaryTextColor">@color/browneeSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="browneeSwitchOptionsViewTitleTextColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeSwitchOptionsViewSwitchColor">@color/browneeAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="browneePriceChartViewBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneePriceChartViewProgressBarColor">@color/browneeProgressBarColor</color>
+    <color name="browneePriceChartViewInfoViewColor">@color/browneeInfoViewColor</color>
+    <color name="browneePriceChartViewInfoFieldsDefaultTextColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneePriceChartViewAxisGridColor">#80888888</color>
+    <color name="browneePriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="browneePriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="browneePriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="browneePriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="browneePriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="browneePriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="browneePriceChartViewTabTextColor">@color/browneePrimaryTextColor</color>
+    <color name="browneePriceChartViewTabIndicatorColor">@color/browneeTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="browneeDepthChartViewBackgroundColor">@color/browneePriceChartViewBackgroundColor</color>
+    <color name="browneeDepthChartViewProgressbarColor">@color/browneePriceChartViewProgressBarColor</color>
+    <color name="browneeDepthChartViewInfoViewColor">@color/browneePriceChartViewInfoViewColor</color>
+    <color name="browneeDepthChartViewInfoFieldsDefaultTextColor">@color/browneePriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="browneeDepthChartViewAxisGridColor">@color/browneePriceChartViewAxisGridColor</color>
+    <color name="browneeDepthChartViewHighlighterColor">@color/browneePriceChartViewHighlighterColor</color>
+    <color name="browneeDepthChartViewPositiveColor">@color/browneePriceChartViewPositiveColor</color>
+    <color name="browneeDepthChartViewNegativeColor">@color/browneePriceChartViewNegativeColor</color>
+    <color name="browneeDepthChartViewNeutralColor">@color/browneePriceChartViewNeutralColor</color>
+    <color name="browneeDepthChartViewTabTextColor">@color/browneePriceChartViewTabTextColor</color>
+    <color name="browneeDepthChartViewTabIndicatorColor">@color/browneePriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="browneeMarketDetailsViewBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneeMarketDetailsViewItemTitleColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeMarketDetailsViewItemValueColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeMarketDetailsViewItemSeparatorColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="browneeMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="browneeOrderbookViewBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneeOrderbookViewHeaderTitleTextColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeOrderbookViewHeaderMoreButtonColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeOrderbookViewHeaderSeparatorColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="browneeOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="browneeOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="browneeOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="browneeOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="browneeOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="browneeOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="browneeOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="browneeOrderbookViewAmountColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeOrderbookViewProgressBarColor">@color/browneeProgressBarColor</color>
+    <color name="browneeOrderbookViewInfoViewColor">@color/browneeInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="browneeTradesViewBackgroundColor">@color/browneeOrderbookViewBackgroundColor</color>
+    <color name="browneeTradesViewHeaderTitleTextColor">@color/browneeOrderbookViewHeaderTitleTextColor</color>
+    <color name="browneeTradesViewHeaderSeparatorColor">@color/browneeOrderbookViewHeaderSeparatorColor</color>
+    <color name="browneeTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="browneeTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="browneeTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="browneeTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="browneeTradesViewBuyPriceColor">@color/browneeOrderbookViewBuyPriceColor</color>
+    <color name="browneeTradesViewSellPriceColor">@color/browneeOrderbookViewSellPriceColor</color>
+    <color name="browneeTradesViewAmountColor">@color/browneeOrderbookViewAmountColor</color>
+    <color name="browneeTradesViewTradeTimeColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeTradesViewProgressBarColor">@color/browneeOrderbookViewProgressBarColor</color>
+    <color name="browneeTradesViewInfoViewColor">@color/browneeOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="browneeOrderbookDetailsViewBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneeOrderbookDetailsViewItemTitleColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeOrderbookDetailsViewItemValueColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeOrderbookDetailsViewItemSeparatorColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="browneeOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="browneeOrderbookDetailsViewProgressBarColor">@color/browneeProgressBarColor</color>
+    <color name="browneeOrderbookDetailsViewInfoViewCaptionColor">@color/browneeSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="browneeDialogBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneeDialogTitleColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeDialogTextColor">@color/browneeDialogTitleColor</color>
+    <color name="browneeDialogButtonColor">@color/browneeDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="browneeDottedMapViewTitleColor">#c9c8ce</color>
+    <color name="browneeDottedMapViewTextColor">@color/browneeSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="browneeNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="browneeNavigationDrawerItemColor">@color/browneePrimaryLightColor</color>
+    <color name="browneeNavigationDrawerSignInButtonContentColor">@color/browneeButtonContentColor</color>
+    <color name="browneeNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/browneeAccentColor</color>
+    <color name="browneeNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/browneeDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="browneeLabeledEditTextTitleColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeLabeledEditTextContainerColor">@color/browneePrimaryLightColor</color>
+    <color name="browneeLabeledEditTextHintColor">@color/browneeSecondaryTextColor</color>
+    <color name="browneeLabeledEditTextTextColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeLabeledEditTextCursorColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeLabeledEditTextLabelColor">@color/browneePrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="browneeQrCodeScannerBorderColor">#747474</color>
+    <color name="browneeQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="browneeSortPanelBackgroundColor">#484559</color>
+    <color name="browneeSortPanelSelectedTitleColor">@color/browneePrimaryTextColor</color>
+    <color name="browneeSortPanelUnselectedTitleColor">@color/browneePrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="browneeSwitchPointerActivatedColor">@color/browneeAccentColor</color>
+    <color name="browneeSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="browneeSwitchBackgroundActivatedColor">@color/browneeAccentColor</color>
+    <color name="browneeSwitchBackgroundDeactivatedColor">@color/browneeSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="browneePopupMenuBackgroundColor">@color/browneePrimaryColor</color>
+    <color name="browneePopupMenuTitleColor">@color/browneePrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="browneePinEntryKeypadDigitButtonTextColor">@color/browneePrimaryTextColor</color>
+    <color name="browneePinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="browneePinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="browneePinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/browneeAccentColor</color>
+    <color name="browneePinEntryKeypadEnabledDeleteButtonForegroundColor">@color/browneePrimaryTextColor</color>
+    <color name="browneePinEntryKeypadDisabledActionButtonForegroundColor">@color/browneePrimaryTextColor</color>
+
+
+
+
+    <!-- Violet -->
+
+    <!-- General -->
+    <color name="violetPrimaryColor">#323653</color>
+    <color name="violetPrimaryLightColor">#45496d</color>
+    <color name="violetPrimaryDarkColor">#2c304b</color>
+    <color name="violetPrimaryTextColor">@color/white</color>
+    <color name="violetPrimaryDarkTextColor">#cad2d6</color>
+    <color name="violetSecondaryTextColor">#cccec9</color>
+    <color name="violetSecondaryDarkTextColor">#9fa09b</color>
+    <color name="violetAccentColor">#6f7ab8</color>
+    <color name="violetDarkAccentColor">#5d66a0</color>
+    <color name="violetContentContainerColor">#2a2f45</color>
+    <color name="violetContentContainerLightColor">@color/violetContentContainerColor</color>
+    <color name="violetContentContainerTextColor">#e0dfdd</color>
+    <color name="violetTabIndicatorColor">@color/violetPrimaryTextColor</color>
+    <color name="violetInfoViewColor">@color/violetSecondaryTextColor</color>
+    <color name="violetProgressBarColor">@color/violetAccentColor</color>
+    <color name="violetGradientStartColor">@color/violetPrimaryColor</color>
+    <color name="violetGradientEndColor">@color/violetPrimaryLightColor</color>
+    <color name="violetLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="violetLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="violetFeedbackCardViewColor">#2b2f49</color>
+    <color name="violetFeedbackFooterButtonColor">@color/violetAccentColor</color>
+    <color name="violetSettingsBackgroundColor">@color/violetContentContainerColor</color>
+
+    <!-- Button -->
+    <color name="violetButtonContentColor">@color/violetPrimaryTextColor</color>
+    <color name="violetButtonReleasedStateBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetButtonPressedStateBackgroundColor">@color/violetPrimaryDarkColor</color>
+
+    <!-- CardView -->
+    <color name="violetCardViewBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetCardViewPrimaryTextColor">@color/violetSecondaryTextColor</color>
+    <color name="violetCardViewDarkPrimaryTextColor">@color/violetSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="violetSwitchOptionsViewTitleTextColor">@color/violetSecondaryTextColor</color>
+    <color name="violetSwitchOptionsViewSwitchColor">@color/violetAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="violetPriceChartViewBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetPriceChartViewProgressBarColor">@color/violetProgressBarColor</color>
+    <color name="violetPriceChartViewInfoViewColor">@color/violetInfoViewColor</color>
+    <color name="violetPriceChartViewInfoFieldsDefaultTextColor">@color/violetSecondaryTextColor</color>
+    <color name="violetPriceChartViewAxisGridColor">#80888888</color>
+    <color name="violetPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="violetPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="violetPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="violetPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="violetPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="violetPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="violetPriceChartViewTabTextColor">@color/violetPrimaryTextColor</color>
+    <color name="violetPriceChartViewTabIndicatorColor">@color/violetTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="violetDepthChartViewBackgroundColor">@color/violetPriceChartViewBackgroundColor</color>
+    <color name="violetDepthChartViewProgressbarColor">@color/violetPriceChartViewProgressBarColor</color>
+    <color name="violetDepthChartViewInfoViewColor">@color/violetPriceChartViewInfoViewColor</color>
+    <color name="violetDepthChartViewInfoFieldsDefaultTextColor">@color/violetPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="violetDepthChartViewAxisGridColor">@color/violetPriceChartViewAxisGridColor</color>
+    <color name="violetDepthChartViewHighlighterColor">@color/violetPriceChartViewHighlighterColor</color>
+    <color name="violetDepthChartViewPositiveColor">@color/violetPriceChartViewPositiveColor</color>
+    <color name="violetDepthChartViewNegativeColor">@color/violetPriceChartViewNegativeColor</color>
+    <color name="violetDepthChartViewNeutralColor">@color/violetPriceChartViewNeutralColor</color>
+    <color name="violetDepthChartViewTabTextColor">@color/violetPriceChartViewTabTextColor</color>
+    <color name="violetDepthChartViewTabIndicatorColor">@color/violetPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="violetMarketDetailsViewBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetMarketDetailsViewItemTitleColor">@color/violetSecondaryTextColor</color>
+    <color name="violetMarketDetailsViewItemValueColor">@color/violetSecondaryTextColor</color>
+    <color name="violetMarketDetailsViewItemSeparatorColor">@color/violetSecondaryTextColor</color>
+    <color name="violetMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="violetMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="violetOrderbookViewBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetOrderbookViewHeaderTitleTextColor">@color/violetSecondaryTextColor</color>
+    <color name="violetOrderbookViewHeaderMoreButtonColor">@color/violetSecondaryTextColor</color>
+    <color name="violetOrderbookViewHeaderSeparatorColor">@color/violetSecondaryTextColor</color>
+    <color name="violetOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="violetOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="violetOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="violetOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="violetOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="violetOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="violetOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="violetOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="violetOrderbookViewAmountColor">@color/violetPrimaryTextColor</color>
+    <color name="violetOrderbookViewProgressBarColor">@color/violetProgressBarColor</color>
+    <color name="violetOrderbookViewInfoViewColor">@color/violetInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="violetTradesViewBackgroundColor">@color/violetOrderbookViewBackgroundColor</color>
+    <color name="violetTradesViewHeaderTitleTextColor">@color/violetOrderbookViewHeaderTitleTextColor</color>
+    <color name="violetTradesViewHeaderSeparatorColor">@color/violetOrderbookViewHeaderSeparatorColor</color>
+    <color name="violetTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="violetTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="violetTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="violetTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="violetTradesViewBuyPriceColor">@color/violetOrderbookViewBuyPriceColor</color>
+    <color name="violetTradesViewSellPriceColor">@color/violetOrderbookViewSellPriceColor</color>
+    <color name="violetTradesViewAmountColor">@color/violetOrderbookViewAmountColor</color>
+    <color name="violetTradesViewTradeTimeColor">@color/violetPrimaryTextColor</color>
+    <color name="violetTradesViewProgressBarColor">@color/violetOrderbookViewProgressBarColor</color>
+    <color name="violetTradesViewInfoViewColor">@color/violetOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="violetOrderbookDetailsViewBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetOrderbookDetailsViewItemTitleColor">@color/violetSecondaryTextColor</color>
+    <color name="violetOrderbookDetailsViewItemValueColor">@color/violetSecondaryTextColor</color>
+    <color name="violetOrderbookDetailsViewItemSeparatorColor">@color/violetSecondaryTextColor</color>
+    <color name="violetOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="violetOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="violetOrderbookDetailsViewProgressBarColor">@color/violetProgressBarColor</color>
+    <color name="violetOrderbookDetailsViewInfoViewCaptionColor">@color/violetSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="violetDialogBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetDialogTitleColor">@color/violetPrimaryTextColor</color>
+    <color name="violetDialogTextColor">@color/violetDialogTitleColor</color>
+    <color name="violetDialogButtonColor">@color/violetDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="violetDottedMapViewTitleColor">#c9c8ce</color>
+    <color name="violetDottedMapViewTextColor">@color/violetSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="violetNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="violetNavigationDrawerItemColor">@color/violetPrimaryLightColor</color>
+    <color name="violetNavigationDrawerSignInButtonContentColor">@color/violetButtonContentColor</color>
+    <color name="violetNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/violetAccentColor</color>
+    <color name="violetNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/violetDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="violetLabeledEditTextTitleColor">@color/violetSecondaryTextColor</color>
+    <color name="violetLabeledEditTextContainerColor">@color/violetPrimaryLightColor</color>
+    <color name="violetLabeledEditTextHintColor">@color/violetSecondaryTextColor</color>
+    <color name="violetLabeledEditTextTextColor">@color/violetPrimaryTextColor</color>
+    <color name="violetLabeledEditTextCursorColor">@color/violetPrimaryTextColor</color>
+    <color name="violetLabeledEditTextLabelColor">@color/violetPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="violetQrCodeScannerBorderColor">#747474</color>
+    <color name="violetQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="violetSortPanelBackgroundColor">#535882</color>
+    <color name="violetSortPanelSelectedTitleColor">@color/violetPrimaryTextColor</color>
+    <color name="violetSortPanelUnselectedTitleColor">@color/violetPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="violetSwitchPointerActivatedColor">@color/violetAccentColor</color>
+    <color name="violetSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="violetSwitchBackgroundActivatedColor">@color/violetAccentColor</color>
+    <color name="violetSwitchBackgroundDeactivatedColor">@color/violetSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="violetPopupMenuBackgroundColor">@color/violetPrimaryColor</color>
+    <color name="violetPopupMenuTitleColor">@color/violetPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="violetPinEntryKeypadDigitButtonTextColor">@color/violetPrimaryTextColor</color>
+    <color name="violetPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="violetPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="violetPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/violetAccentColor</color>
+    <color name="violetPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/violetPrimaryTextColor</color>
+    <color name="violetPinEntryKeypadDisabledActionButtonForegroundColor">@color/violetPrimaryTextColor</color>
+
+
+
+
+    <!-- Purple -->
+
+    <!-- General -->
+    <color name="purplePrimaryColor">#2e2644</color>
+    <color name="purplePrimaryLightColor">#392f56</color>
+    <color name="purplePrimaryDarkColor">#231d35</color>
+    <color name="purplePrimaryTextColor">@color/white</color>
+    <color name="purplePrimaryDarkTextColor">#cad2d6</color>
+    <color name="purpleSecondaryTextColor">#d1cddb</color>
+    <color name="purpleSecondaryDarkTextColor">#a09cab</color>
+    <color name="purpleAccentColor">#725fa8</color>
+    <color name="purpleDarkAccentColor">#615191</color>
+    <color name="purpleContentContainerColor">#241f30</color>
+    <color name="purpleContentContainerLightColor">#2f283f</color>
+    <color name="purpleContentContainerTextColor">#e0dfdd</color>
+    <color name="purpleTabIndicatorColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleInfoViewColor">#c6b7e2</color>
+    <color name="purpleProgressBarColor">@color/purpleAccentColor</color>
+    <color name="purpleGradientStartColor">@color/purplePrimaryColor</color>
+    <color name="purpleGradientEndColor">@color/purplePrimaryLightColor</color>
+    <color name="purpleLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="purpleLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="purpleFeedbackCardViewColor">#251f38</color>
+    <color name="purpleFeedbackFooterButtonColor">@color/purpleAccentColor</color>
+    <color name="purpleSettingsBackgroundColor">@color/purpleContentContainerColor</color>
+
+    <!-- Button -->
+    <color name="purpleButtonContentColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleButtonReleasedStateBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purpleButtonPressedStateBackgroundColor">@color/purplePrimaryDarkColor</color>
+
+    <!-- CardView -->
+    <color name="purpleCardViewBackgroundColor">#302b42</color>
+    <color name="purpleCardViewPrimaryTextColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleCardViewDarkPrimaryTextColor">@color/purpleSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="purpleSwitchOptionsViewTitleTextColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleSwitchOptionsViewSwitchColor">@color/purpleAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="purplePriceChartViewBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purplePriceChartViewProgressBarColor">@color/purpleProgressBarColor</color>
+    <color name="purplePriceChartViewInfoViewColor">@color/purpleInfoViewColor</color>
+    <color name="purplePriceChartViewInfoFieldsDefaultTextColor">@color/purpleSecondaryTextColor</color>
+    <color name="purplePriceChartViewAxisGridColor">#80888888</color>
+    <color name="purplePriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="purplePriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="purplePriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="purplePriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="purplePriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="purplePriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="purplePriceChartViewTabTextColor">@color/purplePrimaryTextColor</color>
+    <color name="purplePriceChartViewTabIndicatorColor">@color/purpleTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="purpleDepthChartViewBackgroundColor">@color/purplePriceChartViewBackgroundColor</color>
+    <color name="purpleDepthChartViewProgressbarColor">@color/purplePriceChartViewProgressBarColor</color>
+    <color name="purpleDepthChartViewInfoViewColor">@color/purplePriceChartViewInfoViewColor</color>
+    <color name="purpleDepthChartViewInfoFieldsDefaultTextColor">@color/purplePriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="purpleDepthChartViewAxisGridColor">@color/purplePriceChartViewAxisGridColor</color>
+    <color name="purpleDepthChartViewHighlighterColor">@color/purplePriceChartViewHighlighterColor</color>
+    <color name="purpleDepthChartViewPositiveColor">@color/purplePriceChartViewPositiveColor</color>
+    <color name="purpleDepthChartViewNegativeColor">@color/purplePriceChartViewNegativeColor</color>
+    <color name="purpleDepthChartViewNeutralColor">@color/purplePriceChartViewNeutralColor</color>
+    <color name="purpleDepthChartViewTabTextColor">@color/purplePriceChartViewTabTextColor</color>
+    <color name="purpleDepthChartViewTabIndicatorColor">@color/purplePriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="purpleMarketDetailsViewBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purpleMarketDetailsViewItemTitleColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleMarketDetailsViewItemValueColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleMarketDetailsViewItemSeparatorColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="purpleMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="purpleOrderbookViewBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purpleOrderbookViewHeaderTitleTextColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleOrderbookViewHeaderMoreButtonColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleOrderbookViewHeaderSeparatorColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="purpleOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="purpleOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="purpleOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="purpleOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="purpleOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="purpleOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="purpleOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="purpleOrderbookViewAmountColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleOrderbookViewProgressBarColor">@color/purpleProgressBarColor</color>
+    <color name="purpleOrderbookViewInfoViewColor">@color/purpleInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="purpleTradesViewBackgroundColor">@color/purpleOrderbookViewBackgroundColor</color>
+    <color name="purpleTradesViewHeaderTitleTextColor">@color/purpleOrderbookViewHeaderTitleTextColor</color>
+    <color name="purpleTradesViewHeaderSeparatorColor">@color/purpleOrderbookViewHeaderSeparatorColor</color>
+    <color name="purpleTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="purpleTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="purpleTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="purpleTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="purpleTradesViewBuyPriceColor">@color/purpleOrderbookViewBuyPriceColor</color>
+    <color name="purpleTradesViewSellPriceColor">@color/purpleOrderbookViewSellPriceColor</color>
+    <color name="purpleTradesViewAmountColor">@color/purpleOrderbookViewAmountColor</color>
+    <color name="purpleTradesViewTradeTimeColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleTradesViewProgressBarColor">@color/purpleOrderbookViewProgressBarColor</color>
+    <color name="purpleTradesViewInfoViewColor">@color/purpleOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="purpleOrderbookDetailsViewBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purpleOrderbookDetailsViewItemTitleColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleOrderbookDetailsViewItemValueColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleOrderbookDetailsViewItemSeparatorColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="purpleOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="purpleOrderbookDetailsViewProgressBarColor">@color/purpleProgressBarColor</color>
+    <color name="purpleOrderbookDetailsViewInfoViewCaptionColor">@color/purpleSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="purpleDialogBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purpleDialogTitleColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleDialogTextColor">@color/purpleDialogTitleColor</color>
+    <color name="purpleDialogButtonColor">@color/purpleDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="purpleDottedMapViewTitleColor">#c9c8ce</color>
+    <color name="purpleDottedMapViewTextColor">@color/purpleSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="purpleNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="purpleNavigationDrawerItemColor">@color/purplePrimaryLightColor</color>
+    <color name="purpleNavigationDrawerSignInButtonContentColor">@color/purpleButtonContentColor</color>
+    <color name="purpleNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/purpleAccentColor</color>
+    <color name="purpleNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/purpleDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="purpleLabeledEditTextTitleColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleLabeledEditTextContainerColor">@color/purplePrimaryLightColor</color>
+    <color name="purpleLabeledEditTextHintColor">@color/purpleSecondaryTextColor</color>
+    <color name="purpleLabeledEditTextTextColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleLabeledEditTextCursorColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleLabeledEditTextLabelColor">@color/purplePrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="purpleQrCodeScannerBorderColor">#747474</color>
+    <color name="purpleQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="purpleSortPanelBackgroundColor">#463a68</color>
+    <color name="purpleSortPanelSelectedTitleColor">@color/purplePrimaryTextColor</color>
+    <color name="purpleSortPanelUnselectedTitleColor">@color/purplePrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="purpleSwitchPointerActivatedColor">@color/purpleAccentColor</color>
+    <color name="purpleSwitchPointerDeactivatedColor">@color/white</color>
+    <color name="purpleSwitchBackgroundActivatedColor">@color/purpleAccentColor</color>
+    <color name="purpleSwitchBackgroundDeactivatedColor">@color/purpleSecondaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="purplePopupMenuBackgroundColor">@color/purplePrimaryColor</color>
+    <color name="purplePopupMenuTitleColor">@color/purplePrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="purplePinEntryKeypadDigitButtonTextColor">@color/purplePrimaryTextColor</color>
+    <color name="purplePinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="purplePinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="purplePinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/purpleAccentColor</color>
+    <color name="purplePinEntryKeypadEnabledDeleteButtonForegroundColor">@color/purplePrimaryTextColor</color>
+    <color name="purplePinEntryKeypadDisabledActionButtonForegroundColor">@color/purplePrimaryTextColor</color>
+
+
+
+
+    <!-- Blue Zodiac -->
+
+    <!-- General -->
+    <color name="blueZodiacPrimaryColor">#103154</color>
+    <color name="blueZodiacPrimaryLightColor">#154170</color>
+    <color name="blueZodiacPrimaryDarkColor">#0b243f</color>
+    <color name="blueZodiacPrimaryTextColor">@color/white</color>
+    <color name="blueZodiacPrimaryDarkTextColor">#cad2d6</color>
+    <color name="blueZodiacSecondaryTextColor">#d0c9b6</color>
+    <color name="blueZodiacSecondaryDarkTextColor">#b5af9f</color>
+    <color name="blueZodiacAccentColor">#357dce</color>
+    <color name="blueZodiacDarkAccentColor">#2b66a8</color>
+    <color name="blueZodiacContentContainerColor">#091f38</color>
+    <color name="blueZodiacContentContainerLightColor">#0a2544</color>
+    <color name="blueZodiacContentContainerTextColor">#e0dfdd</color>
+    <color name="blueZodiacTabIndicatorColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacInfoViewColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacProgressBarColor">@color/blueZodiacAccentColor</color>
+    <color name="blueZodiacGradientStartColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacGradientEndColor">@color/blueZodiacPrimaryLightColor</color>
+    <color name="blueZodiacLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="blueZodiacLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="blueZodiacFeedbackCardViewColor">#0d2844</color>
+    <color name="blueZodiacFeedbackFooterButtonColor">@color/blueZodiacAccentColor</color>
+    <color name="blueZodiacSettingsBackgroundColor">#0c2642</color>
+
+    <!-- Button -->
+    <color name="blueZodiacButtonContentColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacButtonReleasedStateBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacButtonPressedStateBackgroundColor">@color/blueZodiacPrimaryDarkColor</color>
+
+    <!-- CardView -->
+    <color name="blueZodiacCardViewBackgroundColor">#0e2d4f</color>
+    <color name="blueZodiacCardViewPrimaryTextColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacCardViewDarkPrimaryTextColor">@color/blueZodiacSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="blueZodiacSwitchOptionsViewTitleTextColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacSwitchOptionsViewSwitchColor">@color/blueZodiacAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="blueZodiacPriceChartViewBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacPriceChartViewProgressBarColor">@color/blueZodiacProgressBarColor</color>
+    <color name="blueZodiacPriceChartViewInfoViewColor">@color/blueZodiacInfoViewColor</color>
+    <color name="blueZodiacPriceChartViewInfoFieldsDefaultTextColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacPriceChartViewAxisGridColor">#80888888</color>
+    <color name="blueZodiacPriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="blueZodiacPriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="blueZodiacPriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="blueZodiacPriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="blueZodiacPriceChartViewVolumeBarsColor">#3a4970</color>
+    <color name="blueZodiacPriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="blueZodiacPriceChartViewTabTextColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacPriceChartViewTabIndicatorColor">@color/blueZodiacTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="blueZodiacDepthChartViewBackgroundColor">@color/blueZodiacPriceChartViewBackgroundColor</color>
+    <color name="blueZodiacDepthChartViewProgressbarColor">@color/blueZodiacPriceChartViewProgressBarColor</color>
+    <color name="blueZodiacDepthChartViewInfoViewColor">@color/blueZodiacPriceChartViewInfoViewColor</color>
+    <color name="blueZodiacDepthChartViewInfoFieldsDefaultTextColor">@color/blueZodiacPriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="blueZodiacDepthChartViewAxisGridColor">@color/blueZodiacPriceChartViewAxisGridColor</color>
+    <color name="blueZodiacDepthChartViewHighlighterColor">@color/blueZodiacPriceChartViewHighlighterColor</color>
+    <color name="blueZodiacDepthChartViewPositiveColor">@color/blueZodiacPriceChartViewPositiveColor</color>
+    <color name="blueZodiacDepthChartViewNegativeColor">@color/blueZodiacPriceChartViewNegativeColor</color>
+    <color name="blueZodiacDepthChartViewNeutralColor">@color/blueZodiacPriceChartViewNeutralColor</color>
+    <color name="blueZodiacDepthChartViewTabTextColor">@color/blueZodiacPriceChartViewTabTextColor</color>
+    <color name="blueZodiacDepthChartViewTabIndicatorColor">@color/blueZodiacPriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="blueZodiacMarketDetailsViewBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacMarketDetailsViewItemTitleColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacMarketDetailsViewItemValueColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacMarketDetailsViewItemSeparatorColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="blueZodiacMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="blueZodiacOrderbookViewBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacOrderbookViewHeaderTitleTextColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacOrderbookViewHeaderMoreButtonColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacOrderbookViewHeaderSeparatorColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="blueZodiacOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="blueZodiacOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="blueZodiacOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="blueZodiacOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="blueZodiacOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="blueZodiacOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="blueZodiacOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="blueZodiacOrderbookViewAmountColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacOrderbookViewProgressBarColor">@color/blueZodiacProgressBarColor</color>
+    <color name="blueZodiacOrderbookViewInfoViewColor">@color/blueZodiacInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="blueZodiacTradesViewBackgroundColor">@color/blueZodiacOrderbookViewBackgroundColor</color>
+    <color name="blueZodiacTradesViewHeaderTitleTextColor">@color/blueZodiacOrderbookViewHeaderTitleTextColor</color>
+    <color name="blueZodiacTradesViewHeaderSeparatorColor">@color/blueZodiacOrderbookViewHeaderSeparatorColor</color>
+    <color name="blueZodiacTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="blueZodiacTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="blueZodiacTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="blueZodiacTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="blueZodiacTradesViewBuyPriceColor">@color/blueZodiacOrderbookViewBuyPriceColor</color>
+    <color name="blueZodiacTradesViewSellPriceColor">@color/blueZodiacOrderbookViewSellPriceColor</color>
+    <color name="blueZodiacTradesViewAmountColor">@color/blueZodiacOrderbookViewAmountColor</color>
+    <color name="blueZodiacTradesViewTradeTimeColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacTradesViewProgressBarColor">@color/blueZodiacOrderbookViewProgressBarColor</color>
+    <color name="blueZodiacTradesViewInfoViewColor">@color/blueZodiacOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="blueZodiacOrderbookDetailsViewBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacOrderbookDetailsViewItemTitleColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacOrderbookDetailsViewItemValueColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacOrderbookDetailsViewItemSeparatorColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="blueZodiacOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="blueZodiacOrderbookDetailsViewProgressBarColor">@color/blueZodiacProgressBarColor</color>
+    <color name="blueZodiacOrderbookDetailsViewInfoViewCaptionColor">@color/blueZodiacSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="blueZodiacDialogBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacDialogTitleColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacDialogTextColor">@color/blueZodiacDialogTitleColor</color>
+    <color name="blueZodiacDialogButtonColor">@color/blueZodiacDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="blueZodiacDottedMapViewTitleColor">#efeadc</color>
+    <color name="blueZodiacDottedMapViewTextColor">@color/blueZodiacSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="blueZodiacNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="blueZodiacNavigationDrawerItemColor">@color/blueZodiacPrimaryLightColor</color>
+    <color name="blueZodiacNavigationDrawerSignInButtonContentColor">@color/blueZodiacButtonContentColor</color>
+    <color name="blueZodiacNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/blueZodiacAccentColor</color>
+    <color name="blueZodiacNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/blueZodiacDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="blueZodiacLabeledEditTextTitleColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacLabeledEditTextContainerColor">@color/blueZodiacPrimaryLightColor</color>
+    <color name="blueZodiacLabeledEditTextHintColor">@color/blueZodiacSecondaryTextColor</color>
+    <color name="blueZodiacLabeledEditTextTextColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacLabeledEditTextCursorColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacLabeledEditTextLabelColor">@color/blueZodiacPrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="blueZodiacQrCodeScannerBorderColor">#747474</color>
+    <color name="blueZodiacQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="blueZodiacSortPanelBackgroundColor">#194e87</color>
+    <color name="blueZodiacSortPanelSelectedTitleColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacSortPanelUnselectedTitleColor">@color/blueZodiacPrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="blueZodiacSwitchPointerActivatedColor">@color/blueZodiacAccentColor</color>
+    <color name="blueZodiacSwitchPointerDeactivatedColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacSwitchBackgroundActivatedColor">@color/blueZodiacAccentColor</color>
+    <color name="blueZodiacSwitchBackgroundDeactivatedColor">@color/blueZodiacPrimaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="blueZodiacPopupMenuBackgroundColor">@color/blueZodiacPrimaryColor</color>
+    <color name="blueZodiacPopupMenuTitleColor">@color/blueZodiacPrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="blueZodiacPinEntryKeypadDigitButtonTextColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacPinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="blueZodiacPinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="blueZodiacPinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/blueZodiacAccentColor</color>
+    <color name="blueZodiacPinEntryKeypadEnabledDeleteButtonForegroundColor">@color/blueZodiacPrimaryTextColor</color>
+    <color name="blueZodiacPinEntryKeypadDisabledActionButtonForegroundColor">@color/blueZodiacPrimaryTextColor</color>
+
+
+
+
+    <!-- Bubble Blue -->
+
+    <!-- General -->
+    <color name="bubbleBluePrimaryColor">#30487a</color>
+    <color name="bubbleBluePrimaryLightColor">#385591</color>
+    <color name="bubbleBluePrimaryDarkColor">#293d68</color>
+    <color name="bubbleBluePrimaryTextColor">@color/white</color>
+    <color name="bubbleBluePrimaryDarkTextColor">#cad2d6</color>
+    <color name="bubbleBlueSecondaryTextColor">#d0c9b6</color>
+    <color name="bubbleBlueSecondaryDarkTextColor">#b5af9f</color>
+    <color name="bubbleBlueAccentColor">#e49539</color>
+    <color name="bubbleBlueDarkAccentColor">#c17d30</color>
+    <color name="bubbleBlueContentContainerColor">#23355b</color>
+    <color name="bubbleBlueContentContainerLightColor">#263b66</color>
+    <color name="bubbleBlueContentContainerTextColor">#e0dfdd</color>
+    <color name="bubbleBlueTabIndicatorColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueInfoViewColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueProgressBarColor">@color/bubbleBlueAccentColor</color>
+    <color name="bubbleBlueGradientStartColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBlueGradientEndColor">@color/bubbleBluePrimaryLightColor</color>
+    <color name="bubbleBlueLinkReleasedStateBackgroundColor">#ddc040</color>
+    <color name="bubbleBlueLinkPressedStateBackgroundColor">#30ddc040</color>
+    <color name="bubbleBlueFeedbackCardViewColor">@color/bubbleBluePrimaryDarkColor</color>
+    <color name="bubbleBlueFeedbackFooterButtonColor">@color/bubbleBlueAccentColor</color>
+    <color name="bubbleBlueSettingsBackgroundColor">@color/bubbleBlueContentContainerLightColor</color>
+
+    <!-- Button -->
+    <color name="bubbleBlueButtonContentColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueButtonReleasedStateBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBlueButtonPressedStateBackgroundColor">@color/bubbleBluePrimaryDarkColor</color>
+
+    <!-- CardView -->
+    <color name="bubbleBlueCardViewBackgroundColor">#2a406d</color>
+    <color name="bubbleBlueCardViewPrimaryTextColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueCardViewDarkPrimaryTextColor">@color/bubbleBlueSecondaryDarkTextColor</color>
+
+    <!-- SwitchOptionsView -->
+    <color name="bubbleBlueSwitchOptionsViewTitleTextColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueSwitchOptionsViewSwitchColor">@color/bubbleBlueAccentColor</color>
+
+    <!-- PriceChartView -->
+    <color name="bubbleBluePriceChartViewBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBluePriceChartViewProgressBarColor">@color/bubbleBlueProgressBarColor</color>
+    <color name="bubbleBluePriceChartViewInfoViewColor">@color/bubbleBlueInfoViewColor</color>
+    <color name="bubbleBluePriceChartViewInfoFieldsDefaultTextColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBluePriceChartViewAxisGridColor">#80888888</color>
+    <color name="bubbleBluePriceChartViewHighlighterColor">#FFBB73</color>
+    <color name="bubbleBluePriceChartViewPositiveColor">@color/colorGreenAccent</color>
+    <color name="bubbleBluePriceChartViewNegativeColor">@color/colorRedAccent</color>
+    <color name="bubbleBluePriceChartViewNeutralColor">@color/colorBlueAccent</color>
+    <color name="bubbleBluePriceChartViewVolumeBarsColor">#9fa81f</color>
+    <color name="bubbleBluePriceChartViewCandleStickShadowColor">@color/white</color>
+    <color name="bubbleBluePriceChartViewTabTextColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBluePriceChartViewTabIndicatorColor">@color/bubbleBlueTabIndicatorColor</color>
+
+    <!-- DepthChartView -->
+    <color name="bubbleBlueDepthChartViewBackgroundColor">@color/bubbleBluePriceChartViewBackgroundColor</color>
+    <color name="bubbleBlueDepthChartViewProgressbarColor">@color/bubbleBluePriceChartViewProgressBarColor</color>
+    <color name="bubbleBlueDepthChartViewInfoViewColor">@color/bubbleBluePriceChartViewInfoViewColor</color>
+    <color name="bubbleBlueDepthChartViewInfoFieldsDefaultTextColor">@color/bubbleBluePriceChartViewInfoFieldsDefaultTextColor</color>
+    <color name="bubbleBlueDepthChartViewAxisGridColor">@color/bubbleBluePriceChartViewAxisGridColor</color>
+    <color name="bubbleBlueDepthChartViewHighlighterColor">@color/bubbleBluePriceChartViewHighlighterColor</color>
+    <color name="bubbleBlueDepthChartViewPositiveColor">@color/bubbleBluePriceChartViewPositiveColor</color>
+    <color name="bubbleBlueDepthChartViewNegativeColor">@color/bubbleBluePriceChartViewNegativeColor</color>
+    <color name="bubbleBlueDepthChartViewNeutralColor">@color/bubbleBluePriceChartViewNeutralColor</color>
+    <color name="bubbleBlueDepthChartViewTabTextColor">@color/bubbleBluePriceChartViewTabTextColor</color>
+    <color name="bubbleBlueDepthChartViewTabIndicatorColor">@color/bubbleBluePriceChartViewTabIndicatorColor</color>
+
+    <!-- MarketDetailsView -->
+    <color name="bubbleBlueMarketDetailsViewBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBlueMarketDetailsViewItemTitleColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueMarketDetailsViewItemValueColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueMarketDetailsViewItemSeparatorColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueMarketDetailsViewPositiveStatusColor">@color/colorGreenAccent</color>
+    <color name="bubbleBlueMarketDetailsViewNegativeStatusColor">@color/colorRedAccent</color>
+
+    <!-- OrderbookView -->
+    <color name="bubbleBlueOrderbookViewBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBlueOrderbookViewHeaderTitleTextColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueOrderbookViewHeaderMoreButtonColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueOrderbookViewHeaderSeparatorColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueOrderbookViewBuyPriceColor">@color/colorGreenAccent</color>
+    <color name="bubbleBlueOrderbookViewBuyPriceHighlightColor">@color/colorBidOrderbookOrderPriceHighlight</color>
+    <color name="bubbleBlueOrderbookViewBuyOrderBackgroundColor">@color/colorBidOrderbookOrderBackground</color>
+    <color name="bubbleBlueOrderbookViewBuyOrderHighlightBackgroundColor">@color/colorBidOrderbookOrderHighlightBackground</color>
+    <color name="bubbleBlueOrderbookViewSellPriceColor">@color/colorRedAccent</color>
+    <color name="bubbleBlueOrderbookViewSellPriceHighlightColor">@color/colorAskOrderbookOrderPriceHighlight</color>
+    <color name="bubbleBlueOrderbookViewSellOrderBackgroundColor">@color/colorAskOrderbookOrderBackground</color>
+    <color name="bubbleBlueOrderbookViewSellOrderHighlightBackgroundColor">@color/colorAskOrderbookOrderHighlightBackground</color>
+    <color name="bubbleBlueOrderbookViewAmountColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueOrderbookViewProgressBarColor">@color/bubbleBlueProgressBarColor</color>
+    <color name="bubbleBlueOrderbookViewInfoViewColor">@color/bubbleBlueInfoViewColor</color>
+
+    <!-- TradesView -->
+    <color name="bubbleBlueTradesViewBackgroundColor">@color/bubbleBlueOrderbookViewBackgroundColor</color>
+    <color name="bubbleBlueTradesViewHeaderTitleTextColor">@color/bubbleBlueOrderbookViewHeaderTitleTextColor</color>
+    <color name="bubbleBlueTradesViewHeaderSeparatorColor">@color/bubbleBlueOrderbookViewHeaderSeparatorColor</color>
+    <color name="bubbleBlueTradesViewBuyHighlightBackgroundColor">@color/colorBidTradeHighlightBackground</color>
+    <color name="bubbleBlueTradesViewSellHighlightBackgroundColor">@color/colorAskTradeHighlightBackground</color>
+    <color name="bubbleBlueTradesViewBuyPriceHighlightColor">@color/colorBidTradePriceHighlight</color>
+    <color name="bubbleBlueTradesViewSellPriceHighlightColor">@color/colorAskTradePriceHighlight</color>
+    <color name="bubbleBlueTradesViewBuyPriceColor">@color/bubbleBlueOrderbookViewBuyPriceColor</color>
+    <color name="bubbleBlueTradesViewSellPriceColor">@color/bubbleBlueOrderbookViewSellPriceColor</color>
+    <color name="bubbleBlueTradesViewAmountColor">@color/bubbleBlueOrderbookViewAmountColor</color>
+    <color name="bubbleBlueTradesViewTradeTimeColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueTradesViewProgressBarColor">@color/bubbleBlueOrderbookViewProgressBarColor</color>
+    <color name="bubbleBlueTradesViewInfoViewColor">@color/bubbleBlueOrderbookViewInfoViewColor</color>
+
+    <!-- OrderbookDetailsView -->
+    <color name="bubbleBlueOrderbookDetailsViewBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBlueOrderbookDetailsViewItemTitleColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueOrderbookDetailsViewItemValueColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueOrderbookDetailsViewItemSeparatorColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueOrderbookDetailsViewHighestBidValueColor">@color/colorGreenAccent</color>
+    <color name="bubbleBlueOrderbookDetailsViewLowestAskValueColor">@color/colorRedAccent</color>
+    <color name="bubbleBlueOrderbookDetailsViewProgressBarColor">@color/bubbleBlueProgressBarColor</color>
+    <color name="bubbleBlueOrderbookDetailsViewInfoViewCaptionColor">@color/bubbleBlueSecondaryTextColor</color>
+
+    <!-- Dialog -->
+    <color name="bubbleBlueDialogBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBlueDialogTitleColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueDialogTextColor">@color/bubbleBlueDialogTitleColor</color>
+    <color name="bubbleBlueDialogButtonColor">@color/bubbleBlueDialogTitleColor</color>
+
+    <!-- DottedMapView -->
+    <color name="bubbleBlueDottedMapViewTitleColor">#efeadc</color>
+    <color name="bubbleBlueDottedMapViewTextColor">@color/bubbleBlueSecondaryTextColor</color>
+
+    <!-- NavigationDrawer -->
+    <color name="bubbleBlueNavigationDrawerBackgroundColor">@color/white</color>
+    <color name="bubbleBlueNavigationDrawerItemColor">@color/bubbleBluePrimaryLightColor</color>
+    <color name="bubbleBlueNavigationDrawerSignInButtonContentColor">@color/bubbleBlueButtonContentColor</color>
+    <color name="bubbleBlueNavigationDrawerSignInButtonReleasedStateBackgroundColor">@color/bubbleBlueAccentColor</color>
+    <color name="bubbleBlueNavigationDrawerSignInButtonPressedStateBackgroundColor">@color/bubbleBlueDarkAccentColor</color>
+
+    <!-- LabeledEditText -->
+    <color name="bubbleBlueLabeledEditTextTitleColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueLabeledEditTextContainerColor">@color/bubbleBluePrimaryLightColor</color>
+    <color name="bubbleBlueLabeledEditTextHintColor">@color/bubbleBlueSecondaryTextColor</color>
+    <color name="bubbleBlueLabeledEditTextTextColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueLabeledEditTextCursorColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueLabeledEditTextLabelColor">@color/bubbleBluePrimaryTextColor</color>
+
+    <!-- QrCodeScanner -->
+    <color name="bubbleBlueQrCodeScannerBorderColor">#747474</color>
+    <color name="bubbleBlueQrCodeScannerTintColor">#77747474</color>
+
+    <!-- SortPanel -->
+    <color name="bubbleBlueSortPanelBackgroundColor">#4266af</color>
+    <color name="bubbleBlueSortPanelSelectedTitleColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueSortPanelUnselectedTitleColor">@color/bubbleBluePrimaryDarkTextColor</color>
+
+    <!-- Switch -->
+    <color name="bubbleBlueSwitchPointerActivatedColor">@color/bubbleBlueAccentColor</color>
+    <color name="bubbleBlueSwitchPointerDeactivatedColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBlueSwitchBackgroundActivatedColor">@color/bubbleBlueAccentColor</color>
+    <color name="bubbleBlueSwitchBackgroundDeactivatedColor">@color/bubbleBluePrimaryDarkTextColor</color>
+
+    <!-- PopupMenu -->
+    <color name="bubbleBluePopupMenuBackgroundColor">@color/bubbleBluePrimaryColor</color>
+    <color name="bubbleBluePopupMenuTitleColor">@color/bubbleBluePrimaryTextColor</color>
+
+    <!-- PinEntryKeypad -->
+    <color name="bubbleBluePinEntryKeypadDigitButtonTextColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBluePinEntryKeypadEnabledButtonBackgroundColor">#33aaaaaa</color>
+    <color name="bubbleBluePinEntryKeypadDisabledButtonBackgroundColor">#80878787</color>
+    <color name="bubbleBluePinEntryKeypadEnabledFingerprintButtonForegroundColor">@color/bubbleBlueAccentColor</color>
+    <color name="bubbleBluePinEntryKeypadEnabledDeleteButtonForegroundColor">@color/bubbleBluePrimaryTextColor</color>
+    <color name="bubbleBluePinEntryKeypadDisabledActionButtonForegroundColor">@color/bubbleBluePrimaryTextColor</color>
+
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:padding="@dimen/feature_view_padding"
+    tools:parentTag="android.widget.LinearLayout"
+    tools:background="@color/deepTealPrimaryColor">
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="@dimen/feature_view_icon_size"
+        android:layout_height="@dimen/feature_view_icon_size"
+        android:layout_gravity="center_horizontal"
+        tools:src="@drawable/ic_bitcoin"/>
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="@dimen/feature_view_title_text_size"
+        android:textStyle="bold"
+        tools:text="@string/about_activity_feature_crypto_caption"
+        tools:textColor="@color/deepTealPrimaryTextColor"/>
+
+</merge>

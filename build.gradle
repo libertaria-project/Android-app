@@ -1,14 +1,30 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.1.51'
+    ext.gradle_version = '3.3.1'
+    ext.kotlin_version = '1.3.21'
+    ext.dokka_version = '0.9.15'
+    ext.google_services_version = '4.0.1'
+    ext.fabric_version = '1.25.4'
+    ext.new_relic_gradle_version = "5.19.0"
+
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+
     }
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "com.android.tools.build:gradle:$gradle_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokka_version"
+        classpath "com.google.gms:google-services:$google_services_version"
+        classpath "io.fabric.tools:gradle:$fabric_version"
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:$new_relic_gradle_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -19,9 +35,50 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    coroutine_version = "1.0.1"
+    anko_version = "0.10.4"
+    koin_version = "0.9.1"
+
+    event_bus_version = "3.1.1"
+
+    constraint_version = "1.1.2"
+    appcompat_version = "1.0.2"
+    support_version = "1.0.0"
+    room_version = "2.0.0"
+
+    material_version = "1.0.0"
+
+    play_services_vision_version = "17.0.2"
+    play_services_auth_version = "16.0.1"
+    firebase_core_version = "16.0.7"
+
+    retrofit_version = "2.4.0"
+    logging_interceptor_version = "3.10.0"
+
+    mp_android_chart_version = "v3.1.0-alpha"
+    qr_gen_version = "2.4.0"
+    java_aes_crypto_version = "1.1.0"
+
+    crashlytics_version = "2.9.9"
+    timber_version = "4.7.0"
+    material_dialogs_version = "0.9.6.0"
+    adapster_version = "1.0.5"
+    new_relic_agent_version = "5.19.0"
+
+    expandable_layout_version = "2.9.2"
+
+    socket_io_client_version = "1.0.0"
+
+    junit_version = "4.12"
+    test_runner_version = "1.1.0-alpha4"
+    espresso_version = "3.1.0-alpha4"
 }

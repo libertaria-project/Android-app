@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentContainerCl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:background="@drawable/particles_gradient_port_bg"
+    tools:context=".ui.login.new.LoginActivity">
+
+    <ImageView
+        android:id="@+id/appLogoIv"
+        android:layout_width="@dimen/login_app_logo_size"
+        android:layout_height="@dimen/login_app_logo_size"
+        android:layout_marginTop="@dimen/login_app_logo_margin_top"
+        android:fitsSystemWindows="@bool/fitsSystemWindows"
+        android:src="@mipmap/ic_launcher_large"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/titleTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_marginTop="48dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_title_margin_top"
+        android:layout_marginLeft="@dimen/login_title_horizontal_margin"
+        android:layout_marginStart="@dimen/login_title_horizontal_margin"
+        android:layout_marginRight="@dimen/login_title_horizontal_margin"
+        android:layout_marginEnd="@dimen/login_title_horizontal_margin"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/login_title_text_size"
+        android:textStyle="bold"
+        app:fontFamily="@font/stex_font"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@id/appLogoIv"
+        app:layout_constraintBottom_toTopOf="@+id/mottoTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="STEX"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        tools:layout_marginTop="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mottoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_motto_top_margin"
+        android:layout_marginLeft="@dimen/login_motto_horizontal_margin"
+        android:layout_marginStart="@dimen/login_motto_horizontal_margin"
+        android:layout_marginRight="@dimen/login_motto_horizontal_margin"
+        android:layout_marginEnd="@dimen/login_motto_horizontal_margin"
+        android:gravity="center"
+        android:text="@string/app_motto"
+        android:textSize="@dimen/login_motto_text_size"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@id/titleTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        tools:layout_marginTop="5dp"/>
+
+    <com.stocksexchange.android.ui.views.login.LoginCredentialsView
+        android:id="@+id/credentialsView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_credentials_view_horizontal_margin"
+        android:layout_marginEnd="@dimen/login_credentials_view_horizontal_margin"
+        app:layout_constraintStart_toStartOf="@id/mottoTv"
+        app:layout_constraintEnd_toEndOf="@id/mottoTv"
+        app:layout_constraintTop_toBottomOf="@id/mottoTv"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtn"
+        tools:editTextHintTextColor="@color/colorLoginEditTextHintColor"
+        tools:helpTextColor="@color/deepTealPrimaryTextColor"/>
+
+    <com.stocksexchange.android.ui.views.login.confirmationviews.LoginEmailConfirmationView
+        android:id="@+id/emailConfirmationView"
+        app:layout_constraintStart_toStartOf="@id/mottoTv"
+        app:layout_constraintEnd_toEndOf="@id/mottoTv"
+        app:layout_constraintTop_toBottomOf="@id/mottoTv"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtn"
+        tools:editTextHintTextColor="@color/colorLoginEditTextHintColor"
+        tools:hintTextColor="@color/deepTealPrimaryTextColor"
+        style="@style/LoginConfirmationView"/>
+
+    <com.stocksexchange.android.ui.views.login.confirmationviews.LoginSmsConfirmationView
+        android:id="@+id/smsConfirmationView"
+        app:layout_constraintStart_toStartOf="@id/mottoTv"
+        app:layout_constraintEnd_toEndOf="@id/mottoTv"
+        app:layout_constraintTop_toBottomOf="@id/mottoTv"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtn"
+        tools:editTextHintTextColor="@color/colorLoginEditTextHintColor"
+        tools:hintTextColor="@color/deepTealPrimaryTextColor"
+        style="@style/LoginConfirmationView"/>
+
+    <com.stocksexchange.android.ui.views.login.confirmationviews.Login2FaConfirmationView
+        android:id="@+id/twoFactorAuthConfirmationView"
+        app:layout_constraintStart_toStartOf="@id/mottoTv"
+        app:layout_constraintEnd_toEndOf="@id/mottoTv"
+        app:layout_constraintTop_toBottomOf="@id/mottoTv"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtn"
+        tools:editTextHintTextColor="@color/colorLoginEditTextHintColor"
+        tools:hintTextColor="@color/deepTealPrimaryTextColor"
+        style="@style/LoginConfirmationView"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/login_progress_bar_size"
+        android:layout_height="@dimen/login_progress_bar_size"
+        android:layout_marginBottom="@dimen/login_progress_bar_vertical_margin"
+        app:layout_constraintStart_toStartOf="@id/credentialsView"
+        app:layout_constraintEnd_toEndOf="@id/credentialsView"
+        app:layout_constraintBottom_toTopOf="@+id/mainBtn"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/mainBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/login_button_horizontal_margin"
+        android:layout_marginEnd="@dimen/login_button_horizontal_margin"
+        android:layout_marginBottom="@dimen/login_main_btn_vertical_margin"
+        android:paddingTop="@dimen/login_button_vertical_padding"
+        android:paddingBottom="@dimen/login_button_vertical_padding"
+        android:background="@drawable/login_button_background_drawable"
+        android:minHeight="0dp"
+        android:text="@string/login_main_btn_log_in_text"
+        android:textSize="@dimen/login_button_text_size"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@id/mottoTv"
+        app:layout_constraintEnd_toEndOf="@id/mottoTv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:textColor="@color/white"
+        style="@style/SingleLineTextView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

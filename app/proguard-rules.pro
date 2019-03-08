@@ -19,3 +19,63 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# org.jetbrains.kotlinx:kotlinx-coroutines-core
+-keepclassmembernames class kotlinx.** {
+    volatile <fields>;
+}
+
+# com.android.support:design
+-dontwarn android.support.design.**
+-keep class android.support.design.** { *; }
+-keep interface android.support.design.** { *; }
+-keep public class android.support.design.R$* { *; }
+
+# com.squareup.retrofit2:retrofit
+-dontnote retrofit2.Platform
+-dontwarn retrofit2.Platform$Java8
+-keepattributes Signature
+-keepattributes Exceptions
+
+-dontwarn okio.**
+
+# OkHttp
+-dontwarn okhttp3.**
+-dontwarn javax.annotation.**
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# org.greenrobot:eventbus
+-keepattributes *Annotation*
+-keepclassmembers class * {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# com.github.PhilJay:MPAndroidChart
+-keep class com.github.mikephil.charting.** { *; }
+
+# Crashlytics
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-keep public class * extends java.lang.Exception
+
+# NewRelic
+-keep class com.newrelic.** { *; }
+-dontwarn com.newrelic.**
+-keepattributes InnerClasses
+
+# Needed to resolve the following issues:
+#
+# Warning: com.stocksexchange.android.ui.orders.fragment.OrdersFragment$initAdapter$1$3$invokeSuspend$$inlined$get$1:
+# can't find referenced class com.stocksexchange.android.ui.orders.fragment.OrdersFragment$initAdapter$1$3
+# Warning: com.stocksexchange.android.ui.orders.fragment.OrdersFragment$initAdapter$1$3$invokeSuspend$$inlined$get$1:
+# can't find referenced class com.stocksexchange.android.ui.orders.fragment.OrdersFragment$initAdapter$1$3
+-dontwarn com.stocksexchange.android.ui.orders.fragment.*
+
+# Needed to resolve the following crash:
+#
+# Fatal Exception: java.lang.RuntimeException
+# Parcel android.os.Parcel@b2ba846: Unmarshalling unknown type code 1279544898 at offset 4152
+-keepclassmembers class * implements android.os.Parcelable {
+    static ** CREATOR;
+}

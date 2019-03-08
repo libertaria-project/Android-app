@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- (The same as in default dimens.xml) -->
+
+    <!-- Navigation Drawer -->
+    <dimen name="navigation_drawer_width">300dp</dimen>
+
+    <!-- TradeActivity -->
+    <dimen name="trade_activity_bmv_text_size">15sp</dimen>
+    <dimen name="trade_activity_input_error_text_size">13sp</dimen>
+    <dimen name="trade_activity_details_container_option_tv_text_size">15sp</dimen>
+
+    <!-- DepositFragment -->
+    <dimen name="deposit_fragment_details_tv_text_size">15sp</dimen>
+
+</resources>

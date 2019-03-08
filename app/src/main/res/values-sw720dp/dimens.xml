@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="recycler_view_padding_top">10dp</dimen>
+    <dimen name="recycler_view_padding_bottom">6dp</dimen>
+    <dimen name="recycler_view_horizontal_padding">20dp</dimen>
+    <dimen name="recycler_view_divider_size">6dp</dimen>
+
+    <!-- Navigation Drawer -->
+    <dimen name="navigation_drawer_width">350dp</dimen>
+    <dimen name="navigation_drawer_header_height">215dp</dimen>
+
+    <!-- CustomTab -->
+    <dimen name="custom_tab_text_size">18sp</dimen>
+
+    <!-- CurrencyMarketsSortPanel -->
+    <dimen name="currency_markets_sort_panel_vertical_padding">10dp</dimen>
+    <dimen name="currency_markets_sort_panel_horizontal_padding">35dp</dimen>
+    <dimen name="currency_markets_sort_panel_title_size">16sp</dimen>
+
+    <!-- CurrencyMarketPreview -->
+    <dimen name="currency_market_preview_bottom_bar_button_height">55dp</dimen>
+    <dimen name="currency_market_preview_bottom_bar_button_text_size">22sp</dimen>
+
+    <!-- TradeActivity -->
+    <dimen name="trade_activity_bmv_vertical_padding">12dp</dimen>
+
+    <!-- DepositFragment -->
+    <dimen name="deposit_fragment_bmv_height">120dp</dimen>
+    <dimen name="deposit_fragment_hint_tv_text_size">14sp</dimen>
+    <dimen name="deposit_fragment_deposit_fee_tv_margin_top">60dp</dimen>
+
+    <!-- SettingsActivity -->
+    <dimen name="settings_activity_recycler_view_vertical_padding">15dp</dimen>
+    <dimen name="settings_activity_recycler_view_horizontal_padding">@dimen/recycler_view_horizontal_padding</dimen>
+
+    <!-- ThemesActivity -->
+    <dimen name="themes_activity_recycler_view_vertical_padding">20dp</dimen>
+    <dimen name="themes_activity_recycler_view_horizontal_padding">@dimen/recycler_view_horizontal_padding</dimen>
+
+    <!-- ThemeItem -->
+    <dimen name="theme_item_progress_size_size">30dp</dimen>
+
+    <!-- PriceChartView -->
+    <dimen name="price_chart_view_chart_height">300dp</dimen>
+
+    <!-- DepthChartView -->
+    <dimen name="depth_chart_view_chart_height">@dimen/price_chart_view_chart_height</dimen>
+
+    <!-- CurrencyMarketPreview -->
+    <dimen name="currency_market_preview_list_view_rv_height">894dp</dimen>
+
+    <!-- LoginActivity -->
+    <dimen name="login_app_logo_margin_top">100dp</dimen>
+    <dimen name="login_main_btn_vertical_margin">100dp</dimen>
+
+    <dimen name="login_credentials_view_horizontal_margin">60dp</dimen>
+
+    <!-- AuthenticationActivity -->
+    <dimen name="authentication_activity_app_icon_margin_top">105dp</dimen>
+    <dimen name="authentication_activity_pin_entry_keypad_bottom_margin">140dp</dimen>
+
+</resources>

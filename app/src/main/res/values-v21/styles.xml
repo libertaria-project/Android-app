@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/deepTealPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/deepTealPrimaryDarkColor</item>
+        <item name="colorAccent">@color/deepTealAccentColor</item>
+
+        <item name="android:windowBackground">@color/deepTealPrimaryDarkColor</item>
+    </style>
+
+    <style name="TransparentStatusBarTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="TransparentStatusBarTheme">
+        <item name="android:windowBackground">@drawable/splash_activity_bg</item>
+    </style>
+
+    <style name="AuthenticationTheme" parent="TransparentStatusBarTheme"/>
+
+    <style name="LoginTheme" parent="TransparentStatusBarTheme"/>
+
+    <style name="DashboardTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="OrderbookTheme" parent="TransparentStatusBarTheme"/>
+
+</resources>

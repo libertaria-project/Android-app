@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+
+    <item
+        android:id="@+id/background"
+        android:left="@dimen/bordered_map_view_border_negative_margin"
+        android:right="@dimen/bordered_map_view_border_negative_margin">
+
+        <shape
+            android:shape="rectangle">
+
+            <stroke
+                android:width="@dimen/bordered_map_view_border_width"
+                android:color="@color/deepTealInfoViewColor"/>
+
+        </shape>
+
+    </item>
+
+    <!-- Foreground -->
+
+    <item
+        android:id="@+id/foreground"
+        android:drawable="?selectableItemBackground"/>
+
+</layer-list>

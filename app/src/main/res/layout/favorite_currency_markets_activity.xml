@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/deepTealContentContainerColor"
+    tools:context=".ui.favoritecurrencymarkets.FavoriteCurrencyMarketsActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentHolderFl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/currencyMarketsSortPanel"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_elevation"
+        android:layout_below="@+id/currencyMarketsSortPanel"
+        layout="@layout/toolbar_shadow_layout"/>
+
+    <com.stocksexchange.android.ui.views.CurrencyMarketsSortPanel
+        android:id="@+id/currencyMarketsSortPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"/>
+
+    <com.stocksexchange.android.ui.views.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/favorites"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        app:rightButtonDrawable="@drawable/ic_search"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

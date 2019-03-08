@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        android:overScrollMode="never"
+        tools:background="@color/deepTealContentContainerColor"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbar"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        tools:background="@color/deepTealPrimaryColor"
+        tools:tabIndicatorColor="@color/deepTealTabIndicatorColor"/>
+
+    <include
+        layout="@layout/toolbar_shadow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_elevation"
+        android:layout_below="@+id/tabLayout"/>
+
+    <com.stocksexchange.android.ui.views.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/about"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        app:rightButtonDrawable="@drawable/ic_search"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

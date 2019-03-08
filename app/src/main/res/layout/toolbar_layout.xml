@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    tools:background="@color/deepTealPrimaryColor"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <ImageView
+        android:id="@+id/leftBtnIv"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:srcCompat="@drawable/ic_arrow_left"/>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/leftBtnIv"
+        android:layout_toEndOf="@+id/leftBtnIv"
+        android:layout_toLeftOf="@+id/preRightBtnIv"
+        android:layout_toStartOf="@+id/preRightBtnIv"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="@dimen/toolbar_layout_title_horizontal_margin"
+        android:layout_marginStart="@dimen/toolbar_layout_title_horizontal_margin"
+        android:layout_marginRight="@dimen/toolbar_layout_title_horizontal_margin"
+        android:layout_marginEnd="@dimen/toolbar_layout_title_horizontal_margin"
+        android:layout_centerVertical="true"
+        tools:text="Title"
+        tools:textColor="@color/deepTealPrimaryTextColor"
+        style="@style/TitleTextView"/>
+
+    <ImageView
+        android:id="@+id/preRightBtnIv"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rightBtnIv"
+        android:layout_toStartOf="@+id/rightBtnIv"
+        android:layout_alignWithParentIfMissing="true"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_search"/>
+
+    <ImageView
+        android:id="@+id/rightBtnIv"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:src="@drawable/ic_dots_vertical"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/toolbar_progress_bar_padding"
+        android:visibility="gone"/>
+
+</merge>

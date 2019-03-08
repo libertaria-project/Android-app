@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentContainerRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="@dimen/recycler_view_padding_top"
+        android:paddingBottom="@dimen/help_activity_recycler_view_padding_bottom"
+        android:paddingLeft="@dimen/recycler_view_horizontal_padding"
+        android:paddingStart="@dimen/recycler_view_horizontal_padding"
+        android:paddingRight="@dimen/recycler_view_horizontal_padding"
+        android:paddingEnd="@dimen/recycler_view_horizontal_padding"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        tools:background="@color/deepTealContentContainerColor"/>
+
+    <com.stocksexchange.android.ui.views.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="@dimen/toolbar_elevation"
+        app:title="@string/help"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        app:rightButtonDrawable="@drawable/ic_dots_vertical"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

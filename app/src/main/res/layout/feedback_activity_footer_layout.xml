@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/headerRl"
+    android:layout_margin="@dimen/feedback_footer_card_view_margin"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealCardViewColor">
+
+    <com.stocksexchange.android.ui.views.InterceptableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/cardViewTopBarRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/feedback_footer_card_view_top_bar_vertical_padding"
+                android:paddingBottom="@dimen/feedback_footer_card_view_top_bar_vertical_padding"
+                android:paddingLeft="@dimen/feedback_footer_card_view_top_bar_horizontal_padding"
+                android:paddingStart="@dimen/feedback_footer_card_view_top_bar_horizontal_padding"
+                android:paddingRight="@dimen/feedback_footer_card_view_top_bar_horizontal_padding"
+                android:paddingEnd="@dimen/feedback_footer_card_view_top_bar_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/newFeedbackTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/feedback_footer_new_feedback_title"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/feedback_footer_card_view_top_bar_new_feedback_title_text_size"
+                    tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+                <TextView
+                    android:id="@+id/sendBtnTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="@string/feedback_footer_send_button_text"
+                    tools:textColor="@color/deepTealFeedbackFooterButtonColor"
+                    style="@style/SecondaryButton"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/separatorIv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dotted_line_separator_height"
+                android:layerType="software"
+                android:src="@drawable/dotted_line_drawable"/>
+
+            <EditText
+                android:id="@+id/feedbackTextEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:padding="@dimen/feedback_footer_feedback_text_et_padding"
+                android:background="@null"
+                android:textSize="@dimen/feedback_footer_feedback_text_et_text_size"
+                android:textColor="@color/deepTealSecondaryTextColor"
+                android:hint="@string/feedback_footer_feedback_text_et_hint"
+                android:textColorHint="@color/deepTealSecondaryTextColor"
+                android:lineSpacingExtra="@dimen/feedback_footer_feedback_text_et_spacing_extra"
+                android:inputType="textMultiLine|textCapSentences"
+                android:imeOptions="flagNoExtractUi"
+                style="@style/BaseTextView"/>
+
+        </LinearLayout>
+
+    </com.stocksexchange.android.ui.views.InterceptableScrollView>
+
+</androidx.cardview.widget.CardView>

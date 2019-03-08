@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.stocksexchange.android.ui.views.SquareCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+        android:layout_marginStart="@dimen/card_view_horizontal_margin"
+        android:layout_marginRight="@dimen/card_view_horizontal_margin"
+        android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/contentContainerRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@color/deepTealContentContainerColor">
+
+            <RelativeLayout
+                android:id="@+id/toolbarRl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/theme_item_bar_height"
+                tools:background="@color/deepTealPrimaryColor">
+
+                <ImageView
+                    android:id="@+id/leftBtnIv"
+                    android:layout_width="@dimen/theme_item_bar_height"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_menu_18dp"/>
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/leftBtnIv"
+                    android:layout_toEndOf="@+id/leftBtnIv"
+                    android:layout_toLeftOf="@+id/preRightBtnIv"
+                    android:layout_toStartOf="@+id/preRightBtnIv"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_marginLeft="@dimen/theme_item_toolbar_title_horizontal_margin"
+                    android:layout_marginStart="@dimen/theme_item_toolbar_title_horizontal_margin"
+                    android:layout_marginRight="@dimen/theme_item_toolbar_title_horizontal_margin"
+                    android:layout_marginEnd="@dimen/theme_item_toolbar_title_horizontal_margin"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/theme_item_toolbar_title_text_size"
+                    android:text="@string/dashboard_toolbar_title"
+                    android:textColor="@color/deepTealPrimaryTextColor"
+                    style="@style/SingleLineTextView"/>
+
+                <ImageView
+                    android:id="@+id/preRightBtnIv"
+                    android:layout_width="@dimen/theme_item_bar_height"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/rightBtnIv"
+                    android:layout_toStartOf="@+id/rightBtnIv"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_star_18dp"/>
+
+                <ImageView
+                    android:id="@+id/rightBtnIv"
+                    android:layout_width="@dimen/theme_item_bar_height"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_search_18dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/tabLayoutLl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/theme_item_bar_height"
+                android:layout_below="@id/toolbarRl"
+                android:orientation="horizontal"
+                tools:background="@color/deepTealPrimaryColor">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/btcTabView"
+                        android:layout_width="@dimen/theme_item_tab_bar_width"
+                        android:layout_height="@dimen/theme_item_tab_bar_height"
+                        android:layout_gravity="center"
+                        android:alpha="1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        tools:background="@color/deepTealPrimaryTextColor"/>
+
+                    <View
+                        android:id="@+id/tabIndicatorView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/theme_item_tab_bar_indicator_height"
+                        android:layout_gravity="bottom"
+                        tools:background="@color/deepTealTabIndicatorColor"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    tools:background="@color/deepTealPrimaryColor">
+
+                    <View
+                        android:id="@+id/esdtTabView"
+                        android:layout_width="@dimen/theme_item_tab_bar_width"
+                        android:layout_height="@dimen/theme_item_tab_bar_height"
+                        android:layout_gravity="center"
+                        android:alpha="0.5"
+                        android:scaleX="0.75"
+                        android:scaleY="0.75"
+                        tools:background="@color/deepTealPrimaryTextColor"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/sortPanelFl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabLayoutLl"
+                android:paddingStart="@dimen/theme_item_sort_panel_vertical_padding"
+                android:paddingEnd="@dimen/theme_item_sort_panel_vertical_padding"
+                tools:background="@color/deepTealSortPanelBackgroundColor">
+
+                <TextView
+                    android:id="@+id/firstColumnTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:paddingTop="@dimen/theme_item_sort_panel_item_vertical_padding"
+                    android:paddingBottom="@dimen/theme_item_sort_panel_item_vertical_padding"
+                    android:textSize="@dimen/theme_item_sort_panel_item_text_size"
+                    android:textStyle="bold"
+                    tools:text="Name / Vol"
+                    tools:textColor="@color/deepTealSortPanelSelectedTitleColor"/>
+
+                <TextView
+                    android:id="@+id/secondColumnTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/theme_item_sort_panel_item_vertical_padding"
+                    android:paddingBottom="@dimen/theme_item_sort_panel_item_vertical_padding"
+                    android:textSize="@dimen/theme_item_sort_panel_item_text_size"
+                    android:text="@string/last_price"
+                    tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"/>
+
+                <TextView
+                    android:id="@+id/thirdColumnTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:paddingTop="@dimen/theme_item_sort_panel_item_vertical_padding"
+                    android:paddingBottom="@dimen/theme_item_sort_panel_item_vertical_padding"
+                    android:textSize="@dimen/theme_item_sort_panel_item_text_size"
+                    android:text="@string/daily_change"
+                    tools:textColor="@color/deepTealSortPanelUnselectedTitleColor"/>
+
+            </FrameLayout>
+
+            <include
+                android:id="@+id/toolbarDropShadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_elevation"
+                android:layout_below="@id/sortPanelFl"
+                layout="@layout/toolbar_shadow_layout"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/sortPanelFl">
+
+                <ImageView
+                    android:id="@+id/progressBarIv"
+                    android:layout_width="@dimen/theme_item_progress_size_size"
+                    android:layout_height="@dimen/theme_item_progress_size_size"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/ic_progress_bar"
+                    tools:tint="@color/deepTealAccentColor"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/overlayFl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorSemiTransparent"
+            tools:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/theme_item_overlay_icon_size"
+                android:layout_height="@dimen/theme_item_overlay_icon_size"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_marked_circle"/>
+
+        </FrameLayout>
+
+    </com.stocksexchange.android.ui.views.SquareCardView>
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/theme_item_name_horizontal_margin"
+        android:layout_marginEnd="@dimen/theme_item_name_horizontal_margin"
+        android:paddingTop="@dimen/theme_item_name_vertical_padding"
+        android:paddingBottom="@dimen/theme_item_name_vertical_padding"
+        android:textStyle="bold"
+        android:textSize="@dimen/theme_item_name_text_size"
+        android:gravity="center"
+        tools:text="Deep Teal"
+        tools:textColor="@color/white"/>
+
+</LinearLayout>

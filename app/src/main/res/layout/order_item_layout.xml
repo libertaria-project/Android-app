@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginRight="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealCardViewBackgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/order_item_padding"
+        android:orientation="vertical"
+        android:foreground="?attr/selectableItemBackground">
+
+        <FrameLayout
+            android:id="@+id/topBarFl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_top_bar_margin_bottom">
+
+            <TextView
+                android:id="@+id/typeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                tools:text="BUY"
+                tools:textColor="@color/colorGreenAccent"
+                style="@style/SecondaryButton"/>
+
+            <TextView
+                android:id="@+id/marketTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:textSize="@dimen/order_item_market_tv_text_size"
+                tools:text="DIX / NXT"
+                tools:textColor="@color/deepTealDottedMapViewTitleColor"/>
+
+        </FrameLayout>
+
+        <com.stocksexchange.android.ui.views.DottedMapView
+            android:id="@+id/idDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:title="@string/id"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="408402942"/>
+
+        <com.stocksexchange.android.ui.views.DottedMapView
+            android:id="@+id/amountDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:title="@string/amount"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="2800 DIX"/>
+
+        <com.stocksexchange.android.ui.views.DottedMapView
+            android:id="@+id/priceDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:title="@string/price"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="0.0000205 NXT"/>
+
+        <com.stocksexchange.android.ui.views.DottedMapView
+            android:id="@+id/resultDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:title="Spent"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="0.01199000 NXT"/>
+
+        <com.stocksexchange.android.ui.views.DottedMapView
+            android:id="@+id/incomeDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/order_item_dmv_margin_bottom"
+            app:title="@string/income"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="0.0574 NXT"/>
+
+        <com.stocksexchange.android.ui.views.DottedMapView
+            android:id="@+id/dateDmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/date"
+            app:titleSize="@dimen/order_item_dmv_text_size"
+            app:valueSize="@dimen/order_item_dmv_text_size"
+            tools:titleColor="@color/deepTealDottedMapViewTextColor"
+            tools:valueColor="@color/deepTealDottedMapViewTextColor"
+            tools:separatorColor="@color/deepTealDottedMapViewTextColor"
+            tools:value="2018-04-18 07:09:17 PM"/>
+
+        <TextView
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/order_item_cancel_btn_margin_top"
+            android:text="@string/action_cancel"
+            android:textColor="@color/colorBlueAccent"
+            style="@style/SecondaryButton"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

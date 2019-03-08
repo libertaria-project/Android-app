@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stocksexchange.android.ui.views.LockableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/bottomBarLl"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        tools:background="@color/deepTealPrimaryDarkColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
+
+            <LinearLayout
+                android:id="@+id/topPanelRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/toolbar_elevation"
+                tools:background="@color/deepTealPrimaryColor">
+
+                <LinearLayout
+                    android:id="@+id/priceInfoContainerLl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/currency_market_preview_price_info_container_top_margin"
+                    android:layout_marginBottom="@dimen/currency_market_preview_price_info_container_bottom_margin"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lastPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/currency_market_preview_last_price_text_size"
+                        tools:text="0.00000222"
+                        tools:textColor="@color/colorGreenAccent"/>
+
+                    <TextView
+                        android:id="@+id/priceChangeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/currency_market_preview_price_change_text_size"
+                        tools:text="+0.00000001 (+0.07%)"
+                        tools:textColor="@color/colorGreenAccent"/>
+
+                </LinearLayout>
+
+                <com.stocksexchange.android.ui.views.SwitchOptionsView
+                    android:id="@+id/chartTypesSov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/currency_market_preview_chart_types_sov_margin_bottom"
+                    app:leftOptionTitleText="@string/currency_market_preview_chart_types_sov_left_option_title_text"
+                    app:rightOptionTitleText="@string/currency_market_preview_chart_types_sov_right_option_title_text"
+                    app:optionsTitleTextSize="@dimen/currency_market_preview_header_title_text_size"
+                    app:optionsTitleTextColor="@color/deepTealSecondaryTextColor"
+                    app:switchColor="@color/deepTealAccentColor"/>
+
+                <com.stocksexchange.android.ui.views.marketpreview.PriceChartView
+                    android:id="@+id/priceChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:minCandleStickCountForZoomingIn="@integer/price_chart_view_min_candle_stick_count_for_zooming_in"
+                    app:tabTextSize="@dimen/currency_market_preview_chart_view_tab_text_size"
+                    tools:progressBarColor="@color/deepTealProgressBarColor"
+                    tools:tabTextColor="@color/deepTealSecondaryTextColor"
+                    tools:visibility="visible"/>
+
+                <com.stocksexchange.android.ui.views.marketpreview.DepthChartView
+                    android:id="@+id/depthChartView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:depthLevel="@integer/depth_chart_view_depth_level"
+                    app:tabTextSize="@dimen/currency_market_preview_chart_view_tab_text_size"
+                    app:priceChartInfoString="@string/depth_chart_info_price"
+                    app:amountChartInfoString="@string/depth_chart_info_amount"
+                    app:volumeChartInfoString="@string/depth_chart_info_volume"
+                    app:highestBidChartInfoString="@string/depth_chart_info_highest_bid"
+                    app:lowestAskChartInfoString="@string/depth_chart_info_lowest_ask"
+                    app:spreadChartInfoString="@string/depth_chart_info_spread"
+                    tools:progressBarColor="@color/deepTealProgressBarColor"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/marketInfoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/currency_market_preview_header_vertical_margin"
+                android:layout_marginBottom="@dimen/currency_market_preview_header_vertical_margin"
+                android:text="@string/currency_market_preview_market_info_text"
+                android:textSize="@dimen/currency_market_preview_header_title_text_size"
+                tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+            <com.stocksexchange.android.ui.views.detailsviews.MarketDetailsView
+                android:id="@+id/marketDetailsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/toolbar_elevation"
+                app:positiveStatusString="@string/state_active"
+                app:negativeStatusString="@string/state_disabled"
+                tools:background="@color/deepTealPrimaryColor"/>
+
+            <com.stocksexchange.android.ui.views.SwitchOptionsView
+                android:id="@+id/tradeInfoSov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/currency_market_preview_header_vertical_margin"
+                android:layout_marginBottom="@dimen/currency_market_preview_header_vertical_margin"
+                android:layout_gravity="center_horizontal"
+                app:leftOptionTitleText="@string/currency_market_preview_trade_info_sov_left_option_title_text"
+                app:rightOptionTitleText="@string/currency_market_preview_trade_info_sov_right_option_title_text"
+                app:optionsTitleTextSize="@dimen/currency_market_preview_header_title_text_size"
+                tools:optionsTitleTextColor="@color/deepTealSecondaryTextColor"
+                tools:switchColor="@color/deepTealAccentColor"/>
+
+            <com.stocksexchange.android.ui.views.marketpreview.orderbook.OrderbookView
+                android:id="@+id/orderbookView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:shouldHideHeaderMoreButton="false"
+                app:rvHeight="@dimen/currency_market_preview_list_view_rv_height"
+                app:rvItemHorizontalSpacing="@dimen/orderbook_view_recycler_view_horizontal_spacing"
+                app:rvItemBottomSpacing="@dimen/orderbook_view_recycler_view_bottom_spacing"
+                app:ordersOfTypeCountLimit="@integer/orderbook_view_orders_of_type_count_limit"
+                app:orderHighlightDuration="@integer/order_highlight_duration"
+                app:priceMaxCharsLength="@integer/orderbook_view_price_max_chars_length"
+                app:amountMaxCharsLength="@integer/orderbook_view_amount_max_chars_length"
+                tools:background="@color/deepTealPrimaryColor"/>
+
+            <com.stocksexchange.android.ui.views.marketpreview.trades.TradesView
+                android:id="@+id/tradesView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:rvHeight="@dimen/currency_market_preview_list_view_rv_height"
+                app:rvItemBottomSpacing="@dimen/trades_view_recycler_view_bottom_spacing"
+                app:tradesLimit="@integer/trades_view_trades_limit"
+                app:tradeHighlightDuration="@integer/trade_highlight_duration"
+                app:priceMaxCharsLength="@integer/trades_view_price_max_chars_length"
+                app:amountMaxCharsLength="@integer/trades_view_amount_max_chars_length"
+                tools:background="@color/deepTealPrimaryColor"/>
+
+        </LinearLayout>
+
+    </com.stocksexchange.android.ui.views.LockableScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomBarLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/currency_market_preview_bottom_bar_padding"
+        tools:background="@color/deepTealPrimaryLightColor">
+
+        <Button
+            android:id="@+id/buyBtn"
+            android:layout_marginRight="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:layout_marginEnd="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:text="@string/action_buy"
+            tools:textColor="@color/deepTealPrimaryTextColor"
+            tools:background="@drawable/button_selector"
+            tools:backgroundTint="@color/colorGreenAccent"
+            style="@style/CurrencyMarketPreviewBottomBarButton"/>
+
+        <Button
+            android:id="@+id/sellBtn"
+            android:layout_marginLeft="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:layout_marginStart="@dimen/currency_market_preview_bottom_bar_button_margin"
+            android:text="@string/action_sell"
+            tools:textColor="@color/deepTealPrimaryTextColor"
+            tools:background="@drawable/button_selector"
+            tools:backgroundTint="@color/colorRedAccent"
+            style="@style/CurrencyMarketPreviewBottomBarButton"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_elevation"
+        android:layout_above="@+id/bottomBarLl"
+        android:background="@drawable/toolbar_reverse_drop_shadow"/>
+
+    <com.stocksexchange.android.ui.views.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:leftButtonDrawable="@drawable/ic_arrow_left"
+        app:rightButtonDrawable="@drawable/ic_star"
+        tools:title="CLO / BTC"
+        tools:background="@color/deepTealPrimaryColor"/>
+
+</RelativeLayout>

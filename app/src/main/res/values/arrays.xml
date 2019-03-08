@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="candle_stick_styles">
+        <item>@string/candle_stick_style_solid</item>
+        <item>@string/candle_stick_style_hollow</item>
+    </string-array>
+
+    <string-array name="depth_chart_line_styles">
+        <item>@string/depth_chart_line_style_linear</item>
+        <item>@string/depth_chart_line_style_stepped</item>
+    </string-array>
+
+    <string-array name="decimal_separators">
+        <item>@string/decimal_separator_period</item>
+        <item>@string/decimal_separator_comma</item>
+    </string-array>
+
+    <string-array name="grouping_separators">
+        <item>@string/grouping_separator_period</item>
+        <item>@string/grouping_separator_comma</item>
+        <item>@string/grouping_separator_space</item>
+    </string-array>
+
+    <string-array name="authentication_session_durations">
+        <item>@string/time_period_five_minutes</item>
+        <item>@string/time_period_ten_minutes</item>
+        <item>@string/time_period_fifteen_minutes</item>
+        <item>@string/time_period_thirty_minutes</item>
+        <item>@string/time_period_forty_five_minutes</item>
+        <item>@string/time_period_one_hour</item>
+        <item>@string/time_period_two_hours</item>
+        <item>@string/time_period_three_hours</item>
+        <item>@string/time_period_six_hours</item>
+        <item>@string/time_period_nine_hours</item>
+        <item>@string/time_period_twelve_hours</item>
+    </string-array>
+
+    <string-array name="social_media_types">
+        <item>@string/twitter</item>
+        <item>@string/facebook</item>
+        <item>@string/telegram</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.internal.ScrimInsetsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/contentContainerCl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="@bool/fitsSystemWindows"
+            app:elevation="0dp"
+            tools:background="@color/deepTealContentContainerLightColor">
+
+            <RelativeLayout
+                android:id="@+id/toolbarContainerRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+                <com.stocksexchange.android.ui.views.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentTop="true"
+                    android:fitsSystemWindows="@bool/fitsSystemWindows"
+                    app:leftButtonDrawable="@drawable/ic_arrow_left"
+                    tools:title="LTC / BTC orderbook"
+                    tools:background="@color/deepTealPrimaryColor"/>
+
+                <com.stocksexchange.android.ui.views.detailsviews.OrderbookDetailsView
+                    android:id="@+id/orderbookDetailsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:paddingTop="@dimen/orderbook_activity_orderbook_details_view_top_padding"
+                    android:paddingBottom="@dimen/orderbook_activity_orderbook_details_view_bottom_padding"
+                    android:paddingLeft="@dimen/orderbook_activity_orderbook_details_view_horizontal_padding"
+                    android:paddingStart="@dimen/orderbook_activity_orderbook_details_view_horizontal_padding"
+                    android:paddingRight="@dimen/orderbook_activity_orderbook_details_view_horizontal_padding"
+                    android:paddingEnd="@dimen/orderbook_activity_orderbook_details_view_horizontal_padding"
+                    app:emptyPriceText="@string/price_unavailable"
+                    app:emptyVolumeText="@string/volume_unavailable"
+                    tools:background="@color/deepTealPrimaryColor"/>
+
+                <include
+                    layout="@layout/toolbar_shadow_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbar_elevation"
+                    android:layout_below="@id/orderbookDetailsView"/>
+
+                <TextView
+                    android:id="@+id/orderbookViewTitleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/orderbookDetailsView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/orderbook_activity_orderbook_view_title_vertical_margin"
+                    android:layout_marginBottom="@dimen/orderbook_activity_orderbook_view_title_vertical_margin"
+                    android:text="@string/orders"
+                    android:textSize="@dimen/orderbook_activity_orderbook_view_title_text_size"
+                    tools:textColor="@color/deepTealSecondaryTextColor"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.stocksexchange.android.ui.views.marketpreview.orderbook.OrderbookView
+            android:id="@+id/orderbookView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shouldHideHeaderMoreButton="true"
+            app:rvHeight="match_parent"
+            app:rvItemHorizontalSpacing="@dimen/orderbook_view_recycler_view_horizontal_spacing"
+            app:rvItemBottomSpacing="@dimen/orderbook_view_recycler_view_bottom_spacing"
+            app:ordersOfTypeCountLimit="no_limit"
+            app:orderHighlightDuration="@integer/order_highlight_duration"
+            app:priceMaxCharsLength="@integer/orderbook_view_price_max_chars_length"
+            app:amountMaxCharsLength="@integer/orderbook_view_amount_max_chars_length"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:background="@color/deepTealPrimaryColor"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</com.google.android.material.internal.ScrimInsetsFrameLayout>

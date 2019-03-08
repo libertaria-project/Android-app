@@ -37,3 +37,8 @@ build/
 
 #NDK
 obj/
+
+keys.properties
+
+app/google-services.json
+app/newrelic.properties

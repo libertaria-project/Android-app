@@ -1,21 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.stocksexchange">
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stocksexchange.android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
 
     <application
-        android:allowBackup="true"
+        android:name=".AppController"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!-- ACTIVITIES -->
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:screenOrientation="sensorPortrait">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.login.LOGINACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.login.new.LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.login.new.LOGINACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:theme="@style/DashboardTheme">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.dashboard.DASHBOARDACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.currencymarkets.search.CurrencyMarketsSearchActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.currencymarkets.CURRENCYMARKETSSEARCHACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.settings.SettingsActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.settings.SETTINGSACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.about.AboutActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.about.ABOUTACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.feedback.FeedbackActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.feedback.FEEDBACKACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.help.HelpActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.help.HELPACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.favoritecurrencymarkets.FavoriteCurrencyMarketsActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.favoritecurrencymarkets.FAVORITECURRENCYMARKETSACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.currencymarketpreview.CurrencyMarketPreviewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.currencymarketpreview.CURRENCYMARKETPREVIEWACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.trade.buy.BuyActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.trade.buy.BUYACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.trade.sell.SellActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.trade.sell.SELLACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.wallets.WalletsActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.wallets.WALLETSACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".ui.orders.OrdersActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.orders.ORDERSACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.orders.search.OrdersSearchActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.orders.search.ORDERSSEARCHACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.wallets.search.WalletsSearchActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.wallets.search.WALLETSSEARCHACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.transactions.TransactionsActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.transactions.TRANSACTIONSACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.transactions.search.TransactionsSearchActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.transactions.search.TRANSACTIONSSEARCHACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.deposit.DepositActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.deposit.DEPOSITACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.themes.ThemesActivity">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.themes.THEMESACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.auth.AuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthenticationTheme">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.auth.AUTHENTICATIONACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.orderbook.OrderbookActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/OrderbookTheme">
+
+            <intent-filter>
+                <action android:name="com.stocksexchange.android.ui.orderbook.ORDERBOOKACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ui.deeplinkhandler.DeepLinkHandlerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <intent-filter>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+
+                <data android:host="stocks.exchange"/>
+                <data android:host="app.stex.com"/>
+
+                <data android:pathPattern="/..*/trade/pair/..*/..*"/>
+                <data android:pathPattern="/..*/basic-trade/pair/..*/..*"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="com.stocksexchange.android.ui.deeplinkhandler.DEEPLINKHANDLERACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name=".receivers.CustomTabsReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- META -->
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false"/>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode"/>
+
     </application>
 
 </manifest>

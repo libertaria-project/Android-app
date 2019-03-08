@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stocksexchange.android.ui.views.CustomDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows"
+    tools:context=".ui.dashboard.DashboardActivity"
+    tools:openDrawer="start">
+
+    <include layout="@layout/dashboard_activity_content_layout"/>
+
+    <com.stocksexchange.android.ui.drawer.NavigationDrawer
+        android:id="@+id/navigationDrawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="@bool/fitsSystemWindows"
+        tools:background="@color/deepTealNavigationDrawerBackgroundColor"/>
+
+</com.stocksexchange.android.ui.views.CustomDrawerLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    tools:background="@color/deepTealPrimaryColor"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <ImageView
+        android:id="@+id/leftBtnIv"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:srcCompat="@drawable/ic_arrow_left"/>
+
+    <EditText
+        android:id="@+id/queryInputEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/leftBtnIv"
+        android:layout_toEndOf="@id/leftBtnIv"
+        android:layout_toLeftOf="@+id/clearInputBtnIv"
+        android:layout_toStartOf="@+id/clearInputBtnIv"
+        android:layout_marginLeft="@dimen/search_toolbar_query_input_horizontal_margin"
+        android:layout_marginStart="@dimen/search_toolbar_query_input_horizontal_margin"
+        android:layout_marginRight="@dimen/search_toolbar_query_input_horizontal_margin"
+        android:layout_marginEnd="@dimen/search_toolbar_query_input_horizontal_margin"
+        android:gravity="center_vertical"
+        android:imeOptions="actionSearch|flagNoExtractUi"
+        android:background="@null"
+        android:textColorHint="@color/deepTealPrimaryTextColor"
+        tools:hint="@string/currency_markets_search_activity_toolbar_query_input_hint"
+        style="@style/TitleTextView"/>
+
+    <ImageView
+        android:id="@+id/clearInputBtnIv"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:srcCompat="@drawable/ic_close"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/toolbar_progress_bar_padding"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</merge>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_horizontal_margin"
+    android:layout_marginStart="@dimen/card_view_horizontal_margin"
+    android:layout_marginRight="@dimen/card_view_horizontal_margin"
+    android:layout_marginEnd="@dimen/card_view_horizontal_margin"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="@dimen/card_view_elevation"
+    app:cardUseCompatPadding="true"
+    tools:cardBackgroundColor="@color/deepTealCardViewBackgroundColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/currency_market_item_height"
+        android:padding="@dimen/currency_market_item_padding"
+        android:foreground="?attr/selectableItemBackground">
+
+        <View
+            android:id="@+id/statusBarView"
+            android:layout_width="@dimen/currency_market_item_status_bar_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            android:layout_marginEnd="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:background="@color/colorGreenAccent"/>
+
+        <TextView
+            android:id="@+id/baseCurrencySymbolTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            android:layout_marginStart="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            android:layout_marginRight="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginEnd="@dimen/currency_market_item_separator_horizontal_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/volumeTv"
+            app:layout_constraintLeft_toRightOf="@id/statusBarView"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="ETH"
+            tools:textColor="@color/deepTealSecondaryTextColor"
+            style="@style/CurrencyMarketBaseCurrencySymbol"/>
+
+        <TextView
+            android:id="@+id/separatorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginStart="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginRight="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginEnd="@dimen/currency_market_item_separator_horizontal_margin"
+            android:text="/"
+            app:layout_constraintTop_toTopOf="@id/baseCurrencySymbolTv"
+            app:layout_constraintLeft_toRightOf="@id/baseCurrencySymbolTv"
+            app:layout_constraintBottom_toTopOf="@+id/volumeTv"
+            tools:textColor="@color/deepTealSecondaryDarkTextColor"
+            style="@style/CurrencyMarketQuoteCurrencySymbol"/>
+
+        <TextView
+            android:id="@+id/quoteCurrencySymbolTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginStart="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginRight="@dimen/currency_market_item_separator_horizontal_margin"
+            android:layout_marginEnd="@dimen/currency_market_item_separator_horizontal_margin"
+            app:layout_constraintTop_toTopOf="@id/baseCurrencySymbolTv"
+            app:layout_constraintLeft_toRightOf="@id/separatorTv"
+            app:layout_constraintBottom_toTopOf="@+id/volumeTv"
+            tools:text="BTC"
+            tools:textColor="@color/deepTealSecondaryDarkTextColor"
+            style="@style/CurrencyMarketQuoteCurrencySymbol"/>
+
+        <TextView
+            android:id="@+id/volumeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            android:layout_marginStart="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            android:layout_marginRight="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            android:layout_marginEnd="@dimen/currency_market_item_status_bar_view_horizontal_margin"
+            app:layout_constraintTop_toBottomOf="@id/baseCurrencySymbolTv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/statusBarView"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Vol 25.4081"
+            tools:textColor="@color/deepTealSecondaryTextColor"
+            style="@style/CurrencyMarketVolume"/>
+
+        <TextSwitcher
+            android:id="@+id/lastPriceTs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/dailyPriceChangeTv"
+            android:layout_width="@dimen/currency_market_item_daily_price_change_width"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/currency_market_item_daily_price_change_vertical_padding"
+            android:paddingBottom="@dimen/currency_market_item_daily_price_change_vertical_padding"
+            android:paddingLeft="@dimen/currency_market_item_daily_price_change_horizontal_padding"
+            android:paddingStart="@dimen/currency_market_item_daily_price_change_horizontal_padding"
+            android:paddingRight="@dimen/currency_market_item_daily_price_change_horizontal_padding"
+            android:paddingEnd="@dimen/currency_market_item_daily_price_change_horizontal_padding"
+            android:gravity="center"
+            android:textColor="@color/deepTealPrimaryTextColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="+110.39%"
+            tools:background="@drawable/rounded_bg_drawable"
+            tools:backgroundTint="@color/colorGreenAccent"
+            style="@style/CurrencyMarketDailyPriceChange"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

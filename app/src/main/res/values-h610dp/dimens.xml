@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PinEntryKeypad -->
+    <dimen name="pin_entry_keypad_button_size">62dp</dimen>
+
+    <!-- AuthenticationActivity -->
+    <dimen name="authentication_activity_app_icon_size">105dp</dimen>
+    <dimen name="authentication_activity_app_icon_margin_top">50dp</dimen>
+
+</resources>

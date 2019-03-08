@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_drawer_item_height"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="@dimen/navigation_drawer_item_height"
+        android:layout_height="@dimen/navigation_drawer_item_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/navigation_drawer_item_icon_horizontal_margin"
+        android:layout_marginStart="@dimen/navigation_drawer_item_icon_horizontal_margin"
+        android:layout_marginRight="@dimen/navigation_drawer_item_icon_horizontal_margin"
+        android:layout_marginEnd="@dimen/navigation_drawer_item_icon_horizontal_margin"
+        android:scaleType="centerInside"
+        tools:src="@drawable/ic_wallet"
+        tools:tint="@color/deepTealNavigationDrawerItemColor"/>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iconIv"
+        android:layout_toEndOf="@id/iconIv"
+        android:layout_marginLeft="@dimen/navigation_drawer_item_title_margin_left"
+        android:layout_marginStart="@dimen/navigation_drawer_item_title_margin_left"
+        android:textSize="@dimen/navigation_drawer_item_title_text_size"
+        android:textStyle="bold"
+        android:typeface="sans"
+        tools:text="Wallets"
+        tools:textColor="@color/deepTealNavigationDrawerItemColor"
+        style="@style/SingleLineTextView"/>
+
+</RelativeLayout>

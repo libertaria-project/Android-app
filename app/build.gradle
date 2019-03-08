@@ -1,33 +1,135 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'org.jetbrains.dokka-android'
+
+apply plugin: 'io.fabric'
+
+apply plugin: 'newrelic'
+
+// Create a variable called keysPropertiesFile, and initialize it to your
+// keys.properties file, in the rootProject folder.
+def keysPropertiesFile = rootProject.file("keys.properties")
+
+// Initialize a new Properties() object called keysProperties.
+def keysProperties = new Properties()
+
+// Load your keys.properties file into the keysProperties object.
+keysProperties.load(new FileInputStream(keysPropertiesFile))
 
 android {
-    compileSdkVersion 26
-    defaultConfig {
-        applicationId "com.android.stocksexchange"
-        minSdkVersion 17
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    signingConfigs {
+        config {
+            keyAlias keysProperties['SIGNING_CONFIG_KEY_ALIAS']
+            keyPassword keysProperties['SIGNING_CONFIG_KEY_PASSWORD']
+            storeFile file(keysProperties['SIGNING_CONFIG_STORE_FILE'])
+            storePassword keysProperties['SIGNING_CONFIG_STORE_PASSWORD']
         }
     }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.stocksexchange.android"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 13
+        versionName "1.10.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        buildConfigField("String", "NEW_RELIC_TOKEN", "\"" + keysProperties['NEW_RELIC_TOKEN'] + "\"")
+
+        buildConfigField("String", "ENCRYPTION_KEY", "\"" + keysProperties['ENCRYPTION_KEY'] + "\"")
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+
+            multiDexEnabled false
+        }
+
+        release {
+            multiDexEnabled false
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dokka {
+    outputFormat = 'javadoc'
+    outputDirectory = "$buildDir/docs"
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    implementation "org.koin:koin-android:$koin_version"
+
+    implementation "org.greenrobot:eventbus:$event_bus_version"
+
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.recyclerview:recyclerview:$support_version"
+    implementation "androidx.cardview:cardview:$support_version"
+    implementation "androidx.browser:browser:$support_version"
+    implementation "androidx.room:room-runtime:$room_version"
+
+    implementation "com.google.android.material:material:$material_version"
+    implementation "com.google.android.gms:play-services-vision:$play_services_vision_version"
+    implementation "com.google.android.gms:play-services-auth:$play_services_auth_version"
+    implementation "com.google.firebase:firebase-core:$firebase_core_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+
+    implementation "com.github.PhilJay:MPAndroidChart:$mp_android_chart_version"
+    implementation "com.github.kenglxn.QRGen:android:$qr_gen_version"
+    implementation "com.github.tozny:java-aes-crypto:$java_aes_crypto_version"
+
+    implementation "com.crashlytics.sdk.android:crashlytics:$crashlytics_version"
+    implementation "com.jakewharton.timber:timber:$timber_version"
+    implementation "com.afollestad.material-dialogs:core:$material_dialogs_version"
+    implementation "com.arthurivanets.adapster:adapster:$adapster_version"
+    implementation "com.newrelic.agent.android:android-agent:$new_relic_agent_version"
+
+    implementation "net.cachapa.expandablelayout:expandablelayout:$expandable_layout_version"
+
+    implementation ("io.socket:socket.io-client:$socket_io_client_version") {
+        // Excluding org.json which is already provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    kapt "androidx.room:room-compiler:$room_version"
+
+    testImplementation "junit:junit:$junit_version"
+
+    androidTestImplementation "androidx.test:runner:$test_runner_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
 }
+
+apply plugin: 'com.google.gms.google-services'
